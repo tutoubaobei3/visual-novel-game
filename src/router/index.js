@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-const routes=[
-    {
+const routes = [
+  {
     path: '/',
     name: 'home',
     component: () => import('@/views/gameView.vue') // 或其他组件
   },
 ]
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes
 })
 

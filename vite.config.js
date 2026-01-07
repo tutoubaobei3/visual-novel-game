@@ -20,12 +20,12 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
-  base: '/visual-novel-game/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  base: './',
   build: {
     rollupOptions: {
       output: {
