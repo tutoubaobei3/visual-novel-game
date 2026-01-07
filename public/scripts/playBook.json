@@ -1,0 +1,5788 @@
+{
+    "metadata": {
+        "title": "名侦探柯南之诅咒假面的冷笑",
+        "authorship": "名侦探柯南动画组",
+        "adapted_author": "秃头宝贝",
+        "version": "1.0",
+        "description": "柯南第一视角的诅咒假面的冷笑",
+        "statement": "游戏背景图片和立绘素材全部来源于网络，音效和背景音乐下载自网络素材，不用于盈利只用来完成练习。"
+    },
+    "characters": {
+        "kenan": {
+            "name": "你",
+            "sprites": {
+                "normal": "../images/kenan_normal.png",
+                "think": ""
+            }
+        },
+        "xiaolan": {
+            "name": "小兰",
+            "sprites": {
+                "normal": "",
+                "awkward": "",
+                "zhoumei": ""
+            }
+        },
+        "maoli": {
+            "name": "毛利小五郎",
+            "sprites": {
+                "normal": "",
+                "smile": ""
+            }
+        },
+        "piantong": {
+            "name": "片桐正纪",
+            "sprites": {}
+        },
+        "pingshou": {
+            "name": "王松平守",
+            "sprites": {}
+        },
+        "yao": {
+            "name": "长良遥",
+            "sprites": {}
+        },
+        "suinaimei": {
+            "name": "穗奈美",
+            "sprites": {}
+        },
+        "meinaisui": {
+            "name": "美奈穗",
+            "sprites": {}
+        },
+        "hongzi": {
+            "name": "苏芳红子",
+            "sprites": {}
+        },
+        "daoye": {
+            "name": "稻叶和代",
+            "sprites": {}
+        },
+        "lanchuan": {
+            "name": "蓝川冬矢",
+            "sprites": {}
+        }
+    },
+    "clues": [
+        {
+            "id": "sawed_trunk",
+            "name": "被人为锯断的树干",
+            "desc": "林间之路上的树干切口整齐，是被人用电锯锯断后故意搬到路中间的。"
+        },
+        {
+            "id": "target_suho",
+            "name": "针对苏芳红子的警告",
+            "desc": "恐吓信明确针对苏芳红子的慈善晚会，目标明确。"
+        },
+        {
+            "id": "skeptic_curse",
+            "name": "对诅咒持怀疑态度",
+            "desc": "你认为诅咒传说可能只是巧合，更倾向于人为犯案推理。"
+        },
+        {
+            "id": "threatening_letter",
+            "name": "诅咒假面的使者警告信",
+            "desc": "署名'诅咒假面的使者'的恐吓信，警告不要参加苏芳红子的慈善晚会。"
+        },
+        {
+            "id": "use_curse_legend",
+            "name": "利用诅咒传说",
+            "desc": "有人可能利用诅咒假面的传说作为掩护来实施犯罪。"
+        },
+        {
+            "id": "point_suho",
+            "name": "目标指向苏芳红子",
+            "desc": "恐吓信出现在通往宅邸的路上，内容提到慈善晚会，犯人对苏芳有私人怨恨。"
+        },
+        {
+            "id": "involve_all",
+            "name": "牵连所有与会者",
+            "desc": "恐吓信针对整场晚会，犯人可能计划让所有来宾都成为目击者。"
+        },
+        {
+            "id": "victim_family_suspect",
+            "name": "车祸遗属嫌疑",
+            "desc": "恐吓信可能来自车祸受害者家属，对苏芳有报复动机。"
+        },
+        {
+            "id": "whistleblower",
+            "name": "知情人逼供",
+            "desc": "恐吓者可能是知道肇事逃逸真相的人，想通过诅咒假面名义揭发苏芳。"
+        },
+        {
+            "id": "guilt_delegation",
+            "name": "内疚的委托",
+            "desc": "苏芳主动提出调查片桐太太的车祸，像是出于愧疚或不安。"
+        },
+        {
+            "id": "control_investigation",
+            "name": "掌控调查",
+            "desc": "苏芳在恐吓信出现后先委托侦探调查旧案，可能是为了掌握动向。"
+        },
+        {
+            "id": "mansion_layout",
+            "name": "宅邸动线布局",
+            "desc": "娱乐室、假面厅、东西厢房之间的门向和动线布局已记在脑中。"
+        },
+        {
+            "id": "time_impression",
+            "name": "时间印象",
+            "desc": "注意到时钟逼近午夜，与恐吓信中的'今晚'时间点吻合。"
+        },
+        {
+            "id": "mask_movement",
+            "name": "假面异动",
+            "desc": "面具倾斜或掉落可能有物理原因，传说可能被人有意夸大。"
+        },
+        {
+            "id": "man_made_curse",
+            "name": "人为塑造的诅咒",
+            "desc": "多年坚持'午夜上锁'惯例，强化了假面诅咒传说，适合包装超自然案件。"
+        },
+        {
+            "id": "midnight_lock_rule",
+            "name": "午夜上锁规则",
+            "desc": "12点后假面厅上锁，东西厢房无法直接往来，影响行动路线判断。"
+        },
+        {
+            "id": "threat_call",
+            "name": "威胁电话",
+            "desc": "电话中自称诅咒假面的使者，提醒'再不快点就来不及'，引导发现时间。"
+        },
+        {
+            "id": "mask_theft",
+            "name": "面具失窃",
+            "desc": "短时间内两百副面具全部消失，犯人熟悉宅邸构造和锁门时间。"
+        },
+        {
+            "id": "red_fiber",
+            "name": "红色纤维",
+            "desc": "死者右手食指和中指指尖有细微的红色纤维，像松紧带材质。"
+        },
+        {
+            "id": "mask_wear",
+            "name": "面具磨损痕迹",
+            "desc": "面具眼睛孔洞边缘有轻微磨损，孔洞深处有极细的黑色纤维残留。"
+        },
+        {
+            "id": "board_scratches",
+            "name": "木板划痕",
+            "desc": "格状木板下沿有细小划痕，地板有平行的拖拽痕迹。"
+        },
+        {
+            "id": "entry_exit_direction",
+            "name": "进出方向",
+            "desc": "木板下沿划痕比上沿多，说明物体从下方频繁进出。"
+        },
+        {
+            "id": "precise_distance",
+            "name": "精准距离",
+            "desc": "从格状木板到床铺约3.5米。"
+        },
+        {
+            "id": "standard_thickness",
+            "name": "标准厚度",
+            "desc": "每个面具厚度约1.5厘米，非常均匀，便于串联计算长度。"
+        },
+        {
+            "id": "complete_timeline",
+            "name": "完整时间线",
+            "desc": "详细记录了从2:30电话响起到发现尸体的全过程时间线。"
+        },
+        {
+            "id": "body_language",
+            "name": "肢体语言",
+            "desc": "记录下每个人的微表情和肢体动作：蓝川敲桌、片桐眼神闪烁等。"
+        },
+        {
+            "id": "comprehensive_observation",
+            "name": "综合观察",
+            "desc": "同时关注证词内容和行为细节，注意到蓝川证词中的矛盾。"
+        },
+        {
+            "id": "drop_sound",
+            "name": "散落声音",
+            "desc": "面具散落的哗啦声与珠子散落声一致，都是连贯密集的声音。"
+        },
+        {
+            "id": "drop_pattern",
+            "name": "散落模式",
+            "desc": "珠子瞬间全部散开，与面具散落方式相同，提示可能原本连接在一起。"
+        },
+        {                                                                                                                                   
+            "id": "string_inspiration",
+            "name": "串联启示",
+            "desc": "看到珠子原本被细线串联，线断后才散开，联想到面具可能也是被串联的。"
+        }
+    ],
+    "nodes": [
+        {
+            "id": "001",
+            "type": "scene",
+            "character": "",
+            "background": "../images/backgrounds/car.png",
+            "expression": "",
+            "text": "",
+            "bgm": "drive",
+            "next": "002"
+        },
+        {
+            "id": "002",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "爸爸，你开车要特别小心哦。",
+            "next": "003"
+        },
+        {
+            "id": "003",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "没错没错，叔叔，你可别忘了下个星期还要出席一个为车祸意外失去家人的小孩们举办的慈善晚会。",
+            "next": "004"
+        },
+        {
+            "id": "004",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "要是在这出了车祸的话，对于这次邀请爸爸担任贵宾的主办人苏芳红子女士就过意不去了。",
+            "next": "005"
+        },
+        {
+            "id": "005",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "毛利小五郎",
+            "expression": "车上",
+            "text": "我知道啦！人家苏芳红子女士呢，今天特别邀请我去参加宴会，要是出车祸的话——",
+            "next": "006"
+        },
+        {
+            "id": "006",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "岂不是浪费一次捞本的机会吗~",
+            "next": "006.5"
+        },
+        {
+            "id": "006.5",
+            "type": "scene",
+            "background": "../images/backgrounds/shache.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "sfx": "shache",
+            "bgm": "STOP",
+            "next": "007"
+        },
+        {
+            "id": "007",
+            "type": "dialog",
+            "background": "../images/backgrounds/shache.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利叔叔的话音刚落，车子突然剧烈一晃。你只觉得身体猛地向前一冲，轮胎发出刺耳的摩擦声，车子在一截横在路中的大树前紧急刹车停下。",
+            "next": "008"
+        },
+        {
+            "id": "008",
+            "type": "dialog",
+            "background": "../images/backgrounds/xiache.png",
+            "character": "毛利小五郎",
+            "expression": "惊讶",
+            "text": "什、什么啊，这是怎么回事？怎么会有棵树倒在路中间啊！",
+            "next": "009"
+        },
+        {
+            "id": "009",
+            "type": "dialog",
+            "background": "../images/backgrounds/xiache.png",
+            "character": "小兰",
+            "expression": "惊讶",
+            "text": "还好有及时刹车……爸爸，你没事吧？",
+            "next": "010"
+        },
+        {
+            "id": "010",
+            "type": "dialog",
+            "background": "../images/backgrounds/发现纸条.png",
+            "character": "你",
+            "expression": "普通",
+            "text": "叔叔，你看，那边好像贴了张纸。",
+            "next": "011"
+        },
+        {
+            "id": "011",
+            "type": "dialog",
+            "background": "../images/backgrounds/发现纸条.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你指着树干一侧。被雪融化打湿的树皮上，用钉子钉着一张折得皱巴巴的纸。",
+            "next": "012"
+        },
+        {
+            "id": "012",
+            "type": "dialog",
+            "background": "../images/backgrounds/发现纸条.png",
+            "character": "毛利小五郎",
+            "expression": "严肃",
+            "text": "让我看看写了些什么……",
+            "next": "013"
+        },
+        {
+            "id": "013",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "毛利小五郎",
+            "expression": "严肃",
+            "text": "“千万别去苏芳红子的慈善晚会，否则你会后悔。——诅咒假面的使者上。”",
+            "next": "014"
+        },
+        {
+            "id": "014",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "这是什么啊……感觉好可怕。",
+            "next": "015"
+        },
+        {
+            "id": "015",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "“诅咒假面的使者”……",
+            "next": "016"
+        },
+        {
+            "id": "016",
+            "type": "branch",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "一截大树横在路中间，还有一封署名“诅咒假面的使者”的恐吓信。你总觉得，这绝不是单纯的恶作剧。",
+            "options": [
+                {
+                    "id": "016-A",
+                    "text": "检查树干和周围，确认是不是人为布置。",
+                    "next": "017A"
+                },
+                {
+                    "id": "016-B",
+                    "text": "把恐吓信收好，打算到宅邸后拿给苏芳红子看。",
+                    "next": "017B"
+                },
+                {
+                    "id": "016-C",
+                    "text": "先假装轻描淡写，让大家不要太紧张。",
+                    "next": "017C"
+                }
+            ]
+        },
+        {
+            "id": "017A",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "叔叔，我们先把树稍微挪开一点把。",
+            "next": "018A"
+        },
+        {
+            "id": "018A",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你蹲下身，仔细查看树干和地面。树干的断面非常平整，像是被人用锯子刻意锯断拖到这里来的。树旁的泥地上，还有另一辆车留下的轮胎痕迹。",
+            "next": "019A"
+        },
+        {
+            "id": "019A",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "sawed_trunk",
+            "text": "能特意把这么粗的树拖到路中间，还做得这么干净……看样子，对方早就打算在这里“欢迎”我们了。\n【获得线索：被人为锯断并搬来的树干】",
+            "next": "020"
+        },
+        {
+            "id": "017B",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "叔叔，那张纸先不要丢。等到了苏芳红子女士那里，把这封恐吓信给她看，问清楚她之前是不是也收到过类似的东西。",
+            "next": "018B"
+        },
+        {
+            "id": "018B",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利叔叔将那张纸折好塞进口袋里。你在心里又把“诅咒假面的使者”这个署名默念了一遍。",
+            "next": "019B"
+        },
+        {
+            "id": "019B",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "target_suho",
+            "text": "如果她早就收到过类似的恐吓信，却什么都没说……那这件事，肯定不只是“恶作剧”那么简单。\n【获得线索：恐吓信是针对苏芳红子的】",
+            "next": "020"
+        },
+        {
+            "id": "017C",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "叔叔，下次开车之前最好先确认一下前面有没有“树的诅咒”比较好哦。",
+            "next": "018C"
+        },
+        {
+            "id": "018C",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "毛利小五郎",
+            "expression": "车上",
+            "text": "你这小鬼，少在那里乌鸦嘴啦！",
+            "next": "019C"
+        },
+        {
+            "id": "019C",
+            "type": "dialog",
+            "background": "../images/backgrounds/scaryNote.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "threatening_letter",
+            "text": "你嘴上开着玩笑，让气氛看起来轻松一点，但心里却把“诅咒假面的使者”和那张恐吓信牢牢记了下来。\n【获得线索：署名为“诅咒假面的使者”的恐吓信】",
+            "next": "020"
+        },
+        {
+            "id": "020",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "三个人好不容易把树干挪到路边，山路重新恢复了安静。你回到车上，看着前方被夜色吞没的山道，总觉得今晚不会太平静。",
+            "next": "020.5"
+        },
+        {
+            "id": "020.5",
+            "type": "scene",
+            "background": "../images/backgrounds/house.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "bgm": "出发",
+            "next": "020.6"
+        },
+        {
+            "id": "020.6",
+            "type": "scene",
+            "background": "../images/backgrounds/到达.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": "021"
+        },
+        {
+            "id": "021",
+            "type": "scene",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": "022"
+        },
+        {
+            "id": "022",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "这真不得了，好大的宅邸啊",
+            "next": "023"
+        },
+        {
+            "id": "023",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "咦，那个人，不是摄影家片桐正纪吗？",
+            "next": "024"
+        },
+        {
+            "id": "024",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "就是那个多年来环游世界拍摄各国优美风景的那个摄影家吗？",
+            "next": "025"
+        },
+        {
+            "id": "025",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "远处一辆黑色的车缓缓驶来，停在宅邸门前。",
+            "next": "026"
+        },
+        {
+            "id": "026",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "啊，是全垒打王松平守选手！",
+            "next": "027"
+        },
+        {
+            "id": "027",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "王松平守",
+            "expression": "微笑",
+            "text": "你不就是那位名侦探吗？",
+            "next": "028"
+        },
+        {
+            "id": "028",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "片桐正纪",
+            "expression": "出场",
+            "text": "您是毛利小五先生吧？",
+            "next": "029"
+        },
+        {
+            "id": "029",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "嗯，你们二位也是受邀担任下周慈善晚会的来宾啊？",
+            "next": "030"
+        },
+        {
+            "id": "030",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "王松平守",
+            "expression": "微笑",
+            "text": "是啊——",
+            "next": "031"
+        },
+        {
+            "id": "031",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "他话还没说完，另一辆绿色的出租车在不远处停了下来。",
+            "next": "032"
+        },
+        {
+            "id": "032",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "美人耶！",
+            "next": "033"
+        },
+        {
+            "id": "033",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "那位是长良遥小姐耶。",
+            "next": "034"
+        },
+        {
+            "id": "034",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "王松平守",
+            "expression": "微笑",
+            "text": "她就是在电视上大受欢迎的塔罗牌占卜师！",
+            "next": "035"
+        },
+        {
+            "id": "035",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "你倒是听清楚的嘛……",
+            "next": "036"
+        },
+        {
+            "id": "036",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "王松平守",
+            "expression": "微笑",
+            "text": "其实我每次要打球的时候，都会根据她的占卜，再配合我当天的幸运色，选择不同的手套上场～",
+            "next": "037"
+        },
+        {
+            "id": "037",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "你的全垒打就是这么来的……",
+            "next": "038"
+        },
+        {
+            "id": "038",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "长良遥",
+            "expression": "室外",
+            "text": "就是这里。这栋房子给我一种非常不详的预感，我感觉会有一场大灾难发生。",
+            "next": "039"
+        },
+        {
+            "id": "039",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "这、这太触霉头了吧……",
+            "next": "040"
+        },
+        {
+            "id": "040",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "片桐正纪",
+            "expression": "出场",
+            "text": "我们站在这说话也不是办法，先进屋再说吧。",
+            "next": "041"
+        },
+        {
+            "id": "041",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "说的也是。不过这栋大房子，到底要从哪里进去啊，光是入口就有两个欸……",
+            "next": "041.5"
+        },
+        {
+            "id": "041.5",
+            "type": "scene",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "bgm": "STOP",
+            "next": "042"
+        },
+        {
+            "id": "042",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "右边的门忽然打开，一位刘海偏右的女仆——穗奈美走了出来；紧接着，左边的门也打开，另一位女仆美奈穗也现身了。",
+            "next": "043"
+        },
+        {
+            "id": "043",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "非常欢迎几位大驾光临。毛利先生与您的同伴，请从这边的东侧入口进屋休息。",
+            "next": "044"
+        },
+        {
+            "id": "044",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "只有我们三个吗？",
+            "next": "045"
+        },
+        {
+            "id": "045",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "美奈穗",
+            "expression": "微笑",
+            "text": "片桐先生、松平先生以及长良小姐，就请从这边的西侧入口进屋休息。",
+            "next": "046"
+        },
+        {
+            "id": "046",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "为什么我们要分两边进去啊？",
+            "next": "047"
+        },
+        {
+            "id": "047",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "美奈穗",
+            "expression": "微笑",
+            "text": "因为这栋宅邸内部就分为东西两个不同的部分，凡是主人安排在西侧厢房里的客人，就要从西侧入口进入。",
+            "next": "048"
+        },
+        {
+            "id": "048",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "凡是主人安排住宿在东侧厢房里的客人，也必须从东侧入口进入。这是这栋宅邸的惯例。",
+            "next": "049"
+        },
+        {
+            "id": "049",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "这次来的地方还真是怪的可以了……",
+            "next": "050"
+        },
+        {
+            "id": "050",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "美奈穗",
+            "expression": "微笑",
+            "text": "在这栋宅邸里如果不遵守惯例的话，事后都一定会遭受灾难。",
+            "next": "051"
+        },
+        {
+            "id": "051",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "因为这里……",
+            "next": "052"
+        },
+        {
+            "id": "052",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "美奈穗",
+            "expression": "微笑",
+            "text": "因为这里……就是诅咒假面栖息的宅邸。",
+            "next": "053"
+        },
+        {
+            "id": "053",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "话音刚落，一群乌鸦从宅邸上空掠过，发出刺耳的叫声，空气一下子变得阴冷起来。",
+            "next": "054"
+        },
+        {
+            "id": "054",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "毛利小五郎",
+            "expression": "大衣",
+            "text": "诅、诅咒假面……",
+            "next": "055"
+        },
+        {
+            "id": "055",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "诅咒假面的使者、诅咒假面栖息的宅邸……搞不好，恐吓信和这栋屋子有更深的关系。",
+            "next": "056"
+        },
+        {
+            "id": "056",
+            "type": "branch",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "既然到了这里，还是先把该注意的东西记清楚比较好……",
+            "options": [
+                {
+                    "id": "056-A",
+                    "text": "先留意一下这对明显性格不同的双胞胎女仆。",
+                    "next": "057A"
+                },
+                {
+                    "id": "056-B",
+                    "text": "把刚才那句“灾难”和诅咒假面联系起来。",
+                    "next": "057B"
+                },
+                {
+                    "id": "056-C",
+                    "text": "记下每个人被安排在哪一边。",
+                    "next": "057C"
+                }
+            ]
+        },
+        {
+            "id": "057A",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "看起来只是礼貌地在履行职责，可穗奈美说话的时候，总觉得眼神有一瞬间飘向了西侧那边……这对双胞胎身上，八成还有事没说。",
+            "next": "058"
+        },
+        {
+            "id": "057B",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "长良小姐一到门口就说会有大灾难，再加上“诅咒假面栖息的宅邸”……她刚才那种不祥的预感，说不定并不只是职业习惯。",
+            "next": "058"
+        },
+        {
+            "id": "057C",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "东侧是我、小兰姐姐和叔叔；西侧是片桐先生、松平选手和长良小姐……要是日后在东西两侧发生了什么事，这个分法八成会变成关键线索。",
+            "next": "058"
+        },
+        {
+            "id": "058",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子大门.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "在一阵怪异的沉默中，众人最终还是依照女仆的指引，分成两组走向东西两侧的入口。",
+            "next": "059"
+        },
+        {
+            "id": "059",
+            "type": "scene",
+            "background": "../images/backgrounds/东侧走廊.png",
+            "character": "",
+            "expression": "",
+            "text": "东侧走廊",
+            "next": "060"
+        },
+        {
+            "id": "060",
+            "type": "dialog",
+            "background": "../images/backgrounds/东侧走廊.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "墙上挂着不少装在展示框里的面具……",
+            "next": "061"
+        },
+        {
+            "id": "061",
+            "type": "dialog",
+            "background": "../images/backgrounds/东侧走廊.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "这里也有面具……",
+            "next": "062"
+        },
+        {
+            "id": "062",
+            "type": "dialog",
+            "background": "../images/backgrounds/东侧走廊.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "苏芳老师向来就有收集面具的嗜好。三位这边请。",
+            "next": "064"
+        },
+        {
+            "id": "064",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "我现在就去拿你们三位的行李，请各位暂时在假面厅里等候。",
+            "next": "065"
+        },
+        {
+            "id": "065",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "假面厅？",
+            "next": "066"
+        },
+        {
+            "id": "066",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "这个房间就是假面厅。",
+            "next": "067"
+        },
+        {
+            "id": "067",
+            "type": "scene",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "",
+            "expression": "",
+            "sfx": "开门",
+            "text": "假面厅",
+            "next": "068"
+        },
+        {
+            "id": "068",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利推开东侧的门走入假面厅，正好与从对面西侧门走进来的松平、片桐和长良等人碰了个正着。",
+            "next": "069"
+        },
+        {
+            "id": "069",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "原来如此，这个房间就是连接东西两侧厢房之间的通道啊。",
+            "next": "070"
+        },
+        {
+            "id": "070",
+            "type": "dialog",
+            "background": "../images/backgrounds/masks.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "哇，真不得了，这里好多面具哦。",
+            "next": "071"
+        },
+        {
+            "id": "071",
+            "type": "dialog",
+            "background": "../images/backgrounds/masks.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "是面具欸……",
+            "next": "072"
+        },
+        {
+            "id": "072",
+            "type": "dialog",
+            "background": "../images/backgrounds/masks.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "这里也有。",
+            "next": "073"
+        },
+        {
+            "id": "073",
+            "type": "dialog",
+            "background": "../images/backgrounds/masks.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "苏芳老师向来就有收集面具的嗜好。三位这边请。",
+            "next": "074"
+        },
+        {
+            "id": "074",
+            "type": "dialog",
+            "background": "../images/backgrounds/masks.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "众人在假面厅张望，你在展示柜的一角注意到一个和周围格格不入的小遥控器。",
+            "next": "075"
+        },
+        {
+            "id": "075",
+            "type": "dialog",
+            "background": "../images/backgrounds/遥控器.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "这是什么？遥控器吗……",
+            "next": "076"
+        },
+        {
+            "id": "076",
+            "type": "dialog",
+            "background": "../images/backgrounds/遥控器.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "上面还有两个键，一上一下……",
+            "next": "077"
+        },
+        {
+            "id": "077",
+            "type": "dialog",
+            "background": "../images/backgrounds/遥控器.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "这个要是随便按不会出事吧……",
+            "sfx": "按按钮",
+            "next": "078"
+        },
+        {
+            "id": "078",
+            "type": "scene",
+            "background": "../images/backgrounds/帘子拉开.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你刚按下按钮，假面厅尽头原本垂着的红色厚重帘幕猛地被拉起，墙上骤然亮起灯光——",
+            "next": "079"
+        },
+        {
+            "id": "079",
+            "type": "dialog",
+            "background": "../images/backgrounds/帘子拉开.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "整面墙上整齐地排列着数量惊人的白色面具，几乎一模一样的诡异笑容让人背脊发凉。",
+            "next": "080"
+        },
+        {
+            "id": "080",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "震惊",
+            "text": "这些面具到底是……？！",
+            "next": "081"
+        },
+        {
+            "id": "081",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "怎么这么多啊……",
+            "next": "082"
+        },
+        {
+            "id": "082",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "这些全都是萧布尔的假面。",
+            "next": "083"
+        },
+        {
+            "id": "083",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "一位打扮优雅、妆容精致的成熟女性从门口走入，身后跟着她的稻叶和代。",
+            "next": "084"
+        },
+        {
+            "id": "084",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "啊，您就是苏芳红子女士啊。",
+            "next": "085"
+        },
+        {
+            "id": "085",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "各位肯大驾光临，真是蓬荜生辉。",
+            "next": "086"
+        },
+        {
+            "id": "086",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "不知您意下如何？我最得意的收藏，还可以吧？",
+            "next": "087"
+        },
+        {
+            "id": "087",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "啊……这怎么说呢……",
+            "next": "088"
+        },
+        {
+            "id": "088",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "你刚刚说的萧布尔的假面，指的就是这些摆在墙上的面具吗？",
+            "next": "089"
+        },
+        {
+            "id": "089",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "对，这些就是传说中的——由西班牙雕刻家萧布尔·康德雷斯在死前不久完成的两百副面具。",
+            "next": "090"
+        },
+        {
+            "id": "090",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "大家也叫它们“诅咒假面”。",
+            "next": "091"
+        },
+        {
+            "id": "091",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "诅咒假面……",
+            "next": "092"
+        },
+        {
+            "id": "092",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "诅咒假面？！",
+            "next": "093"
+        },
+        {
+            "id": "093",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "那个，请问一下诅咒假面的由来……",
+            "next": "093.5"
+        },
+        {
+            "id": "093.5",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "因为萧布尔.康德雷斯是个悲剧性的雕刻家——他虽然天赋异禀，却掉进眼红他的兄长设下的陷阱里，最后他的地位名声甚至财产都被抢的一点不剩。",
+            "next": "093.6"
+        },
+        {
+            "id": "093.6",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "因为萧布尔。康德雷斯是个悲剧性的雕刻家，他虽然天赋异禀，却掉进眼红他的兄长设下的陷阱里，最后他的地位名声甚至财产都被抢的一点不剩。",
+            "next": "093.7"
+        },
+        {
+            "id": "093.7",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "当时散落在他遗体周围的这些面具全部都沾上了血迹，那景象看起来就像这些面具在吸食他的鲜血一样。。。",
+            "next": "094"
+        },
+        {
+            "id": "094",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "英国某银行的总经理在拿到其中一副面具后的第二天就在骑马的时候不慎坠马，就这样撒手人寰。",
+            "next": "095"
+        },
+        {
+            "id": "095",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "有个法国的珠宝商则是遭到强盗攻击，最后也丢了性命。",
+            "next": "096"
+        },
+        {
+            "id": "096",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "后来不知道从什么时候开始，大家就传说这些面具会吸食持有人的献血，从此大家避之不及。",
+            "next": "097"
+        },
+        {
+            "id": "097",
+            "type": "branch",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "“会吸食持有人的献血……真有这么邪门？”",
+            "options": [
+                {
+                    "text": "这听起来只是巧合，被人当成了诅咒。",
+                    "next": "098_clue_skeptic"
+                },
+                {
+                    "text": "也许有人正打算利用这种传说作掩护。",
+                    "next": "098_clue_use_curse"
+                }
+            ]
+        },
+        {
+            "id": "098_clue_skeptic",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "skeptic_curse",
+            "text": "【线索：对诅咒持怀疑态度】你暂时把这些死亡当成意外，倾向于从“人为犯案”而非“超自然”去推理。",
+            "next": "098"
+        },
+        {
+            "id": "098_clue_use_curse",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "use_curse_legend",
+            "text": "【线索：利用传说】假如有人想杀人，事先广泛散布“诅咒假面”的传说，就能把一切都推给诅咒。",
+            "next": "098"
+        },
+        {
+            "id": "098",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "王松平守",
+            "expression": "正常",
+            "text": "可是你现在收集了这两百副面具，这不会有事吗",
+            "next": "099"
+        },
+        {
+            "id": "099",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "这点您不用担心，我已经请法力高强的灵媒将这些面具的诅咒都封印起来了。",
+            "next": "100"
+        },
+        {
+            "id": "100",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "这件事现在还真是越来越灵异了",
+            "next": "101"
+        },
+        {
+            "id": "101",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "不过苏芳女士，在现实世界里人类的邪念恐怕比什么诅咒还要恐怖哦。",
+            "next": "102"
+        },
+        {
+            "id": "102",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "啊？您怎么突然这么说呢",
+            "next": "103"
+        },
+        {
+            "id": "103",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "其实我刚才在来这里到半路上，被一颗大树挡住了路，树上钉了这张纸",
+            "next": "104"
+        },
+        {
+            "id": "104",
+            "type": "branch",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "“诅咒假面的使者”……是在警告，还是在宣战？",
+            "options": [
+                {
+                    "text": "更像是在针对苏芳女士本人发出恐吓。",
+                    "next": "105_clue_target_su"
+                },
+                {
+                    "text": "也有可能，是在告诫所有今晚参加晚会的人。",
+                    "next": "105_clue_target_all"
+                }
+            ]
+        },
+        {
+            "id": "105_clue_target_su",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "point_suho",
+            "text": "【线索：目标指向苏芳】纸条出现在通往宅邸的路上，内容又提到“慈善晚会”，犯人很可能对苏芳怀有私人怨恨。",
+            "next": "105"
+        },
+        {
+            "id": "105_clue_target_all",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "involve_all",
+            "text": "【线索：牵连所有与会者】如果恐吓对象是整场晚会，说明犯人计划制造“大事件”，让所有来宾都成为目击者。",
+            "next": "105"
+        },
+        {
+            "id": "105",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "毛利先生，老实说我三天前也收到了和这个同样的一封信",
+            "next": "106"
+        },
+        {
+            "id": "106",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "啊！我也收到了！",
+            "next": "107"
+        },
+        {
+            "id": "107",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "我也是一样…",
+            "next": "108"
+        },
+        {
+            "id": "108",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这怎么回事。。",
+            "next": "109"
+        },
+        {
+            "id": "109",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你若无其事地从众人身边走过，心里却已经开始理清这几封信之间的关系。",
+            "next": "110"
+        },
+        {
+            "id": "110",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "involve_all",
+            "text": "【线索：恐吓信群发】不止一人提前收到相同的信，犯人显然事先锁定了与晚会有关的数名对象。",
+            "next": "111"
+        },
+        {
+            "id": "111",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "我的公司也收到同样的信",
+            "next": "112"
+        },
+        {
+            "id": "112",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "冬矢，你怎么这么晚才到啊",
+            "next": "113"
+        },
+        {
+            "id": "113",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "我正在全国巡回表演，稍微迟了一点您就别计较了~",
+            "next": "114"
+        },
+        {
+            "id": "114",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "这个人是谁啊",
+            "next": "115"
+        },
+        {
+            "id": "115",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "啊，柯南你不知道吗，他就是现在最受欢迎的摇滚歌手—蓝川冬矢啊",
+            "next": "116"
+        },
+        {
+            "id": "116",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你打量着蓝川冬矢，心中默默评估他的立场。",
+            "next": "117"
+        },
+        {
+            "id": "117",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "你收到什么奇怪的信啊",
+            "next": "118"
+        },
+        {
+            "id": "118",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "信上没有写寄件人的姓名，就连收件人写的也很奇怪",
+            "next": "119"
+        },
+        {
+            "id": "119",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这个人为了隐藏住笔迹，刻意把字写的非常工整呢。我方便打开看看吗",
+            "next": "120"
+        },
+        {
+            "id": "120",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "那就拜托你了",
+            "next": "121"
+        },
+        {
+            "id": "121",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "“今天晚上诅咒假面将会吸食鲜血，诅咒假面的使者上。”苏芳女士啊，我看这件事还是报警吧",
+            "next": "122"
+        },
+        {
+            "id": "122",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "信里点明“今天晚上”“诅咒假面”“吸食鲜血”，对时间和方式都有暗示，像是提前宣告的犯罪计划。",
+            "next": "123"
+        },
+        {
+            "id": "123",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "苏芳红子",
+            "expression": "微笑",
+            "text": "我倒认为不用把它放在心上。自我从事慈善事业以来，类似这样的恐吓信就没停过。",
+            "next": "124"
+        },
+        {
+            "id": "124",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你缓缓收起笑意，神情比刚才要严肃得多。",
+            "next": "125"
+        },
+        {
+            "id": "125",
+            "type": "branch",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你看着若无其事的苏芳，开始怀疑她的真实想法。",
+            "options": [
+                {
+                    "text": "她大概早就被各种恐吓信吓习惯了。",
+                    "next": "126_clue_routine"
+                },
+                {
+                    "text": "这种反应太冷静了，她一定有不想说的事。",
+                    "next": "126_clue_hide"
+                }
+            ]
+        },
+        {
+            "id": "126_clue_routine",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "苏芳对恐吓信十分淡定，说明她长期与“被怨恨的风险”共存，仇家范围可能非常广。",
+            "next": "126"
+        },
+        {
+            "id": "126_clue_hide",
+            "type": "dialog",
+            "background": "../images/backgrounds/诅咒假面.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "苏芳似乎并不希望大家认真对待这封信，也许一旦报警，就会牵出她过去某件不愿曝光的旧事。",
+            "next": "126"
+        },
+        {
+            "id": "126",
+            "type": "scene",
+            "background": "../images/backgrounds/晚餐之前.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": "126.5"
+        },
+        {
+            "id": "126.5",
+            "type": "scene",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "",
+            "expression": "",
+            "text": "时间推移到晚餐时分，众人移步餐厅。烛光映照着长桌上的佳肴与红酒，气氛看似轻松，却隐隐透着一丝紧张。",
+            "next": "127"
+        },
+        {
+            "id": "127",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "啊！这道牛舌浓汤真是好喝啊！",
+            "next": "128"
+        },
+        {
+            "id": "128",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "王松平守",
+            "expression": "正常",
+            "text": "这瓶红酒也不是平常可以喝到的！",
+            "next": "129"
+        },
+        {
+            "id": "129",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "太棒了！",
+            "next": "131"
+        },
+        {
+            "id": "131",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "苏芳红子",
+            "expression": "喝酒",
+            "text": "各位，老实说大家能这么爽快的答应担任我这次举办的慈善晚会的嘉宾，我真的非常感谢各位。",
+            "next": "132"
+        },
+        {
+            "id": "132",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "苏芳女士啊，不知道能不能冒味请教您一个问题",
+            "next": "133"
+        },
+        {
+            "id": "133",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "苏芳红子",
+            "expression": "正常",
+            "text": "您尽管说",
+            "next": "134"
+        },
+        {
+            "id": "134",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "您怎么会想到为那些因为车祸意外失去家人的孩子举办慈善晚会呢",
+            "next": "135"
+        },
+        {
+            "id": "135",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "餐厅里一时安静下来，所有人都停下了刀叉，视线落在苏芳红子身上。",
+            "next": "136"
+        },
+        {
+            "id": "136",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "苏芳红子",
+            "expression": "失落",
+            "text": "其实我在15年前就开始从事慈善事业了，但是在五年前，一直照顾我的女人竟然发生了肇事逃逸的事情。。",
+            "next": "137"
+        },
+        {
+            "id": "137",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "撞人逃逸？",
+            "next": "138"
+        },
+        {
+            "id": "138",
+            "type": "branch",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你隐约感觉到，这起肇事逃逸事件可能和今晚的恐吓信有关。",
+            "options": [
+                {
+                    "text": "恐吓信很可能出自车祸一方的亲属。",
+                    "next": "139_clue_victim_family"
+                },
+                {
+                    "text": "也许是知道真相的知情人，在逼她面对过去。",
+                    "next": "139_clue_whistleblower"
+                }
+            ]
+        },
+        {
+            "id": "139_clue_victim_family",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "victim_family_suspect",
+            "text": "【线索：车祸遗属嫌疑】如果恐吓信来自车祸受害者一方，那么对苏芳的恨意，不仅合理，也足以演变成精心策划的报复。",
+            "next": "139"
+        },
+        {
+            "id": "139_clue_whistleblower",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "whistleblower",
+            "text": "【线索：知情人逼供】恐吓者可能是知道肇事逃逸真相的人，通过“诅咒假面”的名义，让她在晚会这种公众场合遭到揭发。",
+            "next": "139"
+        },
+        {
+            "id": "139",
+            "type": "dialog",
+            "background": "../images/backgrounds/餐厅.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "苏芳红子垂下眼眸，仿佛在整理纷乱的思绪，餐厅里的气氛也跟着沉重起来。",
+            "next": "139.5"
+        },
+        {
+            "id": "139.5",
+            "type": "dialog",
+            "background": "../images/backgrounds/会客室转场.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "晚餐在一片略显沉重的气氛中结束，宾客们三三两两离席，各自散去。走廊里只剩下柔和的灯光和远处的谈笑声。",
+            "next": "140"
+        },
+        {
+            "id": "140",
+            "type": "scene",
+            "background": "../images/backgrounds/会客室转场.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": "141"
+        },
+        {
+            "id": "141",
+            "type": "scene",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "不久之后，在西侧会客室里，苏芳红子与毛利小五郎相对而坐，窗外的夜色愈发深沉。",
+            "next": "142"
+        },
+        {
+            "id": "142",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "苏芳红子",
+            "expression": "喝酒",
+            "text": "对了毛利先生，我想请您帮我调查一件事",
+            "next": "143"
+        },
+        {
+            "id": "143",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "您不用说了，您是要我找出那份信的寄件人对吗。",
+            "next": "144"
+        },
+        {
+            "id": "144",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "苏芳红子",
+            "expression": "喝酒",
+            "text": "不是。其实我是想请您代我详细的调查片桐先生太太的那场意外。",
+            "next": "145"
+        },
+        {
+            "id": "145",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "片桐先生的太太？为什么？",
+            "next": "146"
+        },
+        {
+            "id": "146",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "苏芳红子",
+            "expression": "喝酒",
+            "text": "我只是听了有点不能释怀。事成之后给你200万，你看如何？",
+            "next": "147"
+        },
+        {
+            "id": "147",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "200万？我一定赴汤蹈火，在所不辞！",
+            "next": "148"
+        },
+        {
+            "id": "148",
+            "type": "scene",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎立刻来了精神，整个人从刚才的拘谨变得兴致勃勃，而苏芳红子只是淡淡一笑。",
+            "next": "149"
+        },
+        {
+            "id": "149",
+            "type": "branch",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你在门外不经意听到了“片桐太太的意外”和“200万”的字眼。",
+            "options": [
+                {
+                    "text": "她大概是真心对车祸一事耿耿于怀。",
+                    "next": "150_clue_guilt"
+                },
+                {
+                    "text": "也许她是在抢先掌握调查的主导权。",
+                    "next": "150_clue_control"
+                }
+            ]
+        },
+        {
+            "id": "150_clue_guilt",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "guilt_delegation",
+            "text": "【线索：内疚的委托】苏芳主动提出调查片桐太太的车祸，像是出于愧疚或不安，而不是单纯好奇。",
+            "next": "150"
+        },
+        {
+            "id": "150_clue_control",
+            "type": "dialog",
+            "background": "../images/backgrounds/西侧会客室.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "control_investigation",
+            "text": "【线索：掌控调查】在恐吓信出现后，她先一步委托侦探调查旧案，也许是为了在真相曝光前，先掌握一切动向。",
+            "next": "150"
+        },
+        {
+            "id": "150",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "时间渐晚，宅邸里的灯光逐渐收束，只剩下几处仍然传来热闹的笑声。你顺着声音，来到了一间宽敞的娱乐室门口。",
+            "next": "151"
+        },
+        {
+            "id": "151",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "娱乐室内灯火通明，一角传来台球撞击声，另一边是棋盘与塔罗牌，气氛比餐厅轻松得多。",
+            "next": "152"
+        },
+        {
+            "id": "152",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "三人围在台球桌边——王松平守、蓝川冬矢与片桐正纪，正打得兴起。",
+            "next": "153"
+        },
+        {
+            "id": "153",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "打的不错嘛，全垒打王。",
+            "next": "154"
+        },
+        {
+            "id": "154",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "王松平守",
+            "expression": "微笑",
+            "text": "我运气好嘛。",
+            "next": "155"
+        },
+        {
+            "id": "155",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "另一边，小兰正和你在棋盘前对弈，黑白棋子交错，局面已经相当复杂。",
+            "next": "156"
+        },
+        {
+            "id": "156",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "柯南，你的棋下的不错哦",
+            "next": "157"
+        },
+        {
+            "id": "157",
+            "type": "branch",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你看着棋盘，顺便把娱乐室里每个人的位置都记在心里。",
+            "options": [
+                {
+                    "text": "假装孩子样子，故意下得随便一点。",
+                    "next": "158_clue_hide_ability"
+                },
+                {
+                    "text": "继续认真下棋，顺便观察周围动静。",
+                    "next": "158_clue_observe"
+                }
+            ]
+        },
+        {
+            "id": "158_clue_hide_ability",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你选择压低自己的水平，让别人放心地把你当成普通小孩，方便之后行动。",
+            "next": "158"
+        },
+        {
+            "id": "158_clue_observe",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你留意着每个人的动向，这些位置和时间差，将来很可能成为不在场证明的关键。",
+            "next": "158"
+        },
+        {
+            "id": "158",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "不远处，毛利小五郎和长良遥坐在沙发上，对桌上铺开的塔罗牌饶有兴致。",
+            "next": "159"
+        },
+        {
+            "id": "159",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "毛利先生，今年将是您开创一个新局的大好机会",
+            "next": "160"
+        },
+        {
+            "id": "160",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "开创新局~",
+            "next": "161"
+        },
+        {
+            "id": "161",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "一旁喝得有点上头的稻叶和代晃晃悠悠走到毛利身边，用肩膀撞了他一下。",
+            "next": "162"
+        },
+        {
+            "id": "162",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "稻叶和代",
+            "expression": "醉酒",
+            "text": "那么毛利先生，要不要到我们公司来做歌手啊～如果毛利先生肯开金口，一定会造成轰动的。",
+            "next": "163"
+        },
+        {
+            "id": "163",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "既然这样呢，我就来高歌一曲！",
+            "next": "164"
+        },
+        {
+            "id": "164",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎端起酒杯，大张着嘴装模作样地唱了两句，引得众人一阵哄笑。",
+            "next": "165"
+        },
+        {
+            "id": "165",
+            "type": "branch",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "你看着越唱越起劲的毛利小五郎，顺便观察了一圈现场的出口与钟表位置。",
+            "options": [
+                {
+                    "text": "记住每一扇门通往哪边走廊。",
+                    "next": "166_clue_layout"
+                },
+                {
+                    "text": "确认一下墙上的时钟时间。",
+                    "next": "166_clue_time"
+                }
+            ]
+        },
+        {
+            "id": "166_clue_layout",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "mansion_layout",
+            "text": "【线索：宅邸动线】娱乐室与假面厅、东西厢房之间的门向布局，大致在你脑中成形，一旦发生事故就能推算行动路线。",
+            "next": "166"
+        },
+        {
+            "id": "166_clue_time",
+            "type": "dialog",
+            "background": "../images/backgrounds/娱乐室.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "time_impression",
+            "text": "【线索：时间印象】你注意到墙上时钟的指针已经逼近午夜，这个时间点和恐吓信中的“今晚”不谋而合。",
+            "next": "166"
+        },
+        {
+            "id": "166",
+            "type": "scene",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "就在笑声逐渐高涨之时，两名女仆从门口出现，朝众人微微俯身行礼。",
+            "next": "167"
+        },
+        {
+            "id": "167",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "穗奈美 ，美奈穗",
+            "expression": "微笑",
+            "text": "抱歉打扰各位的雅兴，这栋宅邸一但到了午夜12点，这些年来，就有一个将假面厅这里上锁的惯例。一但上锁，西厢房和东厢房之间就不能再互相连接了。也就因此，我们必须在这之前就先请大家回房休息，希望大家能配合。",
+            "next": "168"
+        },
+        {
+            "id": "168",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "什么啊。12点才不过天刚黑不久而已嘛。",
+            "next": "169"
+        },
+        {
+            "id": "169",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "这里要在12点上锁是不是有什么原因啊",
+            "next": "170"
+        },
+        {
+            "id": "170",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "穗奈美 ",
+            "expression": "微笑",
+            "text": "萧布尔的假面喜欢恶作剧，所以一过午夜就会擅自到处玩耍。",
+            "next": "171"
+        },
+        {
+            "id": "171",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "美奈穗",
+            "expression": "微笑",
+            "text": "正因如此我们必须上锁，将他们通通锁在假面厅。",
+            "next": "172"
+        },
+        {
+            "id": "172",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "简直是无稽之谈。。。",
+            "next": "173"
+        },
+        {
+            "id": "173",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "穗奈美",
+            "expression": "微笑",
+            "text": "是真的，每次天亮之后，那些面具不是会左右倾斜，再不就是直接摔落在地上，过去已经发生太多次了。所以要麻烦大家，现在可以开始准备回房休息了。",
+            "next": "174"
+        },
+        {
+            "id": "174",
+            "type": "branch",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "关于“会自己乱动的假面”，你不禁在心里做出判断。",
+            "options": [
+                {
+                    "text": "多半是风、地基或人为恶作剧造成的。",
+                    "next": "175_clue_rational"
+                },
+                {
+                    "text": "如果有人想制造密室传说，这个“惯例”正合适。",
+                    "next": "175_clue_legend"
+                }
+            ]
+        },
+        {
+            "id": "175_clue_rational",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "mask_movement",
+            "text": "【线索：假面异动】面具倾斜或掉落，很可能有物理原因，这条传说也许被人有意夸大，用来掩盖真正的行动。",
+            "next": "175"
+        },
+        {
+            "id": "175_clue_legend",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "man_made_curse",
+            "text": "【线索：人为塑造的诅咒】多年坚持“午夜上锁”的惯例，本身就强化了假面诅咒的传说，非常适合用来包装一场看似超自然的案件。",
+            "next": "175"
+        },
+        {
+            "id": "175",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "midnight_lock_rule",
+            "text": "【线索：午夜上锁规则】一到12点，假面厅上锁，西厢房与东厢房之间无法直接往来，这将成为日后推理行动路线的重要前提。",
+            "next": "176"
+        },
+        {
+            "id": "176",
+            "type": "dialog",
+            "background": "../images/backgrounds/熄灯.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "呵呵呵，不知道这里到底还能诡异到什么程度啊",
+            "next": "177"
+        },
+        {
+            "id": "177",
+            "type": "scene",
+            "background": "../images/backgrounds/午夜锁门.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "远处的座钟敲响了午夜的钟声，沉重的金属回音在宅邸各处回荡。紧接着，假面厅厚重的大门缓缓合拢，上锁的声响格外清晰。",
+            "next": "178"
+        },
+        {
+            "id": "178",
+            "type": "scene",
+            "background": "../images/backgrounds/睡觉.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "午夜过后不久，东侧二楼的客房里灯光已灭，三人各自躺在床上，只剩毛利小五郎雷鸣般的呼噜声此起彼伏。",
+            "next": "179"
+        },
+        {
+            "id": "179",
+            "type": "dialog",
+            "background": "../images/backgrounds/睡觉.png",
+            "character": "你",
+            "expression": "无语",
+            "text": "拜托，呼声这么大叫我怎么睡啊",
+            "next": "180"
+        },
+        {
+            "id": "180",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "正在你翻来覆去的时候，床头柜上的内线电话骤然响起，刺耳的铃声在寂静的房间里显得格外突兀。",
+            "next": "181"
+        },
+        {
+            "id": "181",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "你",
+            "expression": "震惊",
+            "text": "是内线电话？！你是什么人！？",
+            "next": "182"
+        },
+        {
+            "id": "182",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "对方",
+            "expression": "",
+            "text": "哈哈哈，我是诅咒假面的使者。。。",
+            "next": "183"
+        },
+        {
+            "id": "183",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "你",
+            "expression": "震惊",
+            "text": "诅咒假面的使者？？",
+            "next": "184"
+        },
+        {
+            "id": "184",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "毛利小五郎",
+            "expression": "车上",
+            "text": "喂！。。。",
+            "next": "185"
+        },
+        {
+            "id": "185",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "对方",
+            "expression": "",
+            "text": "诅咒假面现在渴望喝到献血，谁会是我们的牺牲品呢。。。",
+            "next": "186"
+        },
+        {
+            "id": "186",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "毛利小五郎",
+            "expression": "车上",
+            "text": "你说什么？？！",
+            "next": "187"
+        },
+        {
+            "id": "187",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "对方",
+            "expression": "",
+            "text": "再不快点就来不及了哦",
+            "next": "188"
+        },
+        {
+            "id": "188",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "对方话音一落，电话立刻被挂断，只剩下刺耳的忙音在话筒里回响。",
+            "next": "189"
+        },
+        {
+            "id": "189",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "开什么玩笑啊，这里锁上了，小兰，柯南，去把穗奈美叫起来，让他把钥匙拿来！",
+            "next": "190"
+        },
+        {
+            "id": "190",
+            "type": "dialog",
+            "background": "../images/backgrounds/电话.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "好！",
+            "next": "191"
+        },
+        {
+            "id": "191",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你和小兰冲出房间，穿过昏暗的走廊，朝楼下飞奔而去。",
+            "next": "192"
+        },
+        {
+            "id": "192",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "threat_call",
+            "text": "【线索：威胁电话】对方不仅自称诅咒假面的使者，还提醒“再不快点就来不及”，像是在刻意引导你们在特定时间发现某件事。",
+            "next": "193"
+        },
+        {
+            "id": "193",
+            "type": "dialog",
+            "background": "../images/backgrounds/一楼东侧入口_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你路过一楼东侧的入口时，忍不住停下脚步，瞥了一眼那扇门。",
+            "next": "194"
+        },
+        {
+            "id": "194",
+            "type": "dialog",
+            "background": "../images/backgrounds/一楼东侧入口_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "路过一楼东侧的入口，发现上锁了，说明打电话的人还在这",
+            "next": "195"
+        },
+        {
+            "id": "195",
+            "type": "dialog",
+            "background": "../images/backgrounds/一楼东侧入口_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "东侧入口从内反锁，打电话的人不可能从外面拨打后再离开，这通电话多半来自宅邸内部。",
+            "next": "196"
+        },
+        {
+            "id": "196",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "很快，你跟在小兰身后，匆匆返回楼上，身后则是被吵醒、睡眼惺忪的穗奈美。",
+            "next": "197"
+        },
+        {
+            "id": "197",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "爸爸！",
+            "next": "198"
+        },
+        {
+            "id": "198",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "穗奈美，快点开锁",
+            "next": "199"
+        },
+        {
+            "id": "199",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "穗奈美",
+            "expression": "紧张",
+            "text": "好",
+            "next": "200"
+        },
+        {
+            "id": "200",
+            "type": "scene",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "随着门锁咔哒一声转动，假面厅的大门缓缓被推开，众人不约而同地朝房间里望去。",
+            "next": "201"
+        },
+        {
+            "id": "201",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "你",
+            "expression": "震惊",
+            "text": "萧布尔的假面全不见了。。。",
+            "next": "202"
+        },
+        {
+            "id": "202",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "怎么会发生这种事呢。。",
+            "next": "203"
+        },
+        {
+            "id": "203",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "clueId": "mask_theft",
+            "text": "【线索：面具失窃】短时间内让两百副面具全部消失，必定经过周密准备，也说明犯人对宅邸构造和锁门时间非常熟悉。",
+            "next": "204"
+        },
+        {
+            "id": "204",
+            "type": "scene",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "就在众人震惊之际，忽然从楼上传来一声微弱而模糊的呻吟。",
+            "sfx": "jianjiao",
+            "next": "205"
+        },
+        {
+            "id": "205",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "？刚刚那是什么声音",
+            "next": "206"
+        },
+        {
+            "id": "206",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "小兰",
+            "expression": "担心",
+            "text": "好像是上面传来的！",
+            "next": "207"
+        },
+        {
+            "id": "207",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "上面？那是苏芳女士的寝室！",
+            "next": "208"
+        },
+        {
+            "id": "208",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎顾不得多想，立刻转身冲向通往苏芳寝室的方向。",
+            "next": "209"
+        },
+        {
+            "id": "209",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "穗奈美",
+            "expression": "紧张",
+            "text": "那里上不去的！老师的寝室必须要从西厢房的楼梯才能上去！",
+            "next": "210"
+        },
+        {
+            "id": "210",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎一把拧向通往西厢房的门把，却发现门仍然紧锁。",
+            "next": "211"
+        },
+        {
+            "id": "211",
+            "type": "dialog",
+            "background": "../images/backgrounds/假面厅_夜.png",
+            "character": "穗奈美",
+            "expression": "紧张",
+            "text": "我去叫醒美奈穗叫她开锁！",
+            "next": "212"
+        },
+        {
+            "id": "212",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "不多时，西厢房方向的门被打开，睡意未消的蓝川冬矢探出头来。",
+            "next": "213"
+        },
+        {
+            "id": "213",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "喂，你们在吵什么啊，都这么晚了。。啊？萧布尔的假面都。。",
+            "next": "214"
+        },
+        {
+            "id": "214",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "美奈穗从门外匆忙赶到，将通往三楼的楼梯口打开，让众人得以上楼。",
+            "next": "215"
+        },
+        {
+            "id": "215",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "众人气喘吁吁地来到三楼走廊，苏芳寝室的房门静静地矗立在走廊尽头。",
+            "next": "216"
+        },
+        {
+            "id": "216",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "苏芳女士！苏芳女士！",
+            "next": "217"
+        },
+        {
+            "id": "217",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "蓝川冬矢伸手打开走廊的灯，昏黄的灯光照亮了紧闭的房门和门上方狭小的气窗。",
+            "next": "218"
+        },
+        {
+            "id": "218",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "这间门也上锁了！",
+            "next": "219"
+        },
+        {
+            "id": "219",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你们快看那个气窗！",
+            "next": "220"
+        },
+        {
+            "id": "220",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎顺着你的视线抬头望去，脸色一下子变得凝重起来。",
+            "next": "221"
+        },
+        {
+            "id": "221",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "王松平守",
+            "expression": "紧张",
+            "text": "毛利先生，这是怎么回事。苏芳女士出了什么事吗",
+            "next": "222"
+        },
+        {
+            "id": "222",
+            "type": "scene",
+            "background": "../images/backgrounds/搬凳子.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利小五郎搬来一张凳子，举起走廊上的花瓶，狠狠砸向那扇狭小的气窗，玻璃碎片四散飞溅。",
+            "next": "223"
+        },
+        {
+            "id": "223",
+            "type": "dialog",
+            "background": "../images/backgrounds/呃啊.png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "呃啊！",
+            "next": "224"
+        },
+        {
+            "id": "224",
+            "type": "dialog",
+            "background": "../images/backgrounds/呃啊.png",
+            "character": "蓝川冬矢",
+            "expression": "慌张",
+            "text": "喂，老师到底怎么样了！",
+            "next": "225"
+        },
+        {
+            "id": "225",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "我看她好像受了伤，流了好多血，而且房间里到处散落了萧布尔的假面！",
+            "next": "226"
+        },
+        {
+            "id": "226",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "萧布尔的假面。。。",
+            "next": "227"
+        },
+        {
+            "id": "227",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "除了这里还有其他入口吗。。那里还有一道门！",
+            "next": "228"
+        },
+        {
+            "id": "227",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "除了这里还有其他入口吗。。那里还有一道门！",
+            "next": "228"
+        },
+        {
+            "id": "228",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "蓝川冬矢",
+            "expression": "慌张",
+            "text": "那扇门根本进不去，早就被封住了！",
+            "next": "229"
+        },
+        {
+            "id": "229",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "让我从那里进去，先看看里面的情况再说！",
+            "next": "230"
+        },
+        {
+            "id": "230",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "也只有这样了。",
+            "next": "231"
+        },
+        {
+            "id": "231",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利叔叔找来垫子垫在气窗边缘，蓝川冬矢抱起你，毛利叔叔接过你举向气窗。你的目光扫过蓝川的手臂——他的右手手背上有一道细小的新鲜划痕。",
+            "next": "232"
+        },
+        {
+            "id": "232",
+            "type": "dialog",
+            "background": "../images/backgrounds/现场.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "看你的了，柯南！",
+            "next": "233"
+        },
+        {
+            "id": "233",
+            "type": "dialog",
+            "background": "../images/backgrounds/翻窗户.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你翻过气窗，轻巧地落在房间内。血腥味和旧木头的味道混合在一起。月光从气窗透进来，在昏暗的光线中，你看到苏芳红子躺在床上，颈部有一道狰狞的伤口。",
+            "next": "234"
+        },
+        {
+            "id": "234",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "房间很大，地上散落着大量面具，从对面那扇被封住的门（格状木板）下方一直延伸到床边。床头柜上放着一把沾血的刀。",
+            "next": "235"
+        },
+        {
+            "id": "235",
+            "type": "branch",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你需要快速检查现场，但时间有限。先从哪里开始？",
+            "options": [
+                {
+                    "text": "先检查遗体，确认死因和死亡时间",
+                    "next": "236_clue_corpse"
+                },
+                {
+                    "text": "先检查散落的面具，看看有没有异常",
+                    "next": "236_clue_mask"
+                },
+                {
+                    "text": "先检查格状木板和那扇被封住的门",
+                    "next": "236_clue_door"
+                }
+            ]
+        },
+        {
+            "id": "236_clue_corpse",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你爬上床，小心地不破坏现场。先探了探苏芳红子的脉搏——确实已经死亡。体温尚存，死亡时间应该不久。",
+            "next": "237_clue_corpse"
+        },
+        {
+            "id": "237_clue_corpse",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "red_fiber",
+            "text": "你仔细检查遗体：颈部伤口很深，边缘整齐；死者面部表情平静，没有挣扎痕迹；你拉起死者的右手——食指和中指指尖有细微的红色纤维。获得【线索：红色纤维】",
+            "next": "238_common"
+        },
+        {
+            "id": "236_clue_mask",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你跳下床，开始检查地上的面具。你随机捡起几个面具观察，发现靠近床铺的几个面具嘴边有喷溅状血迹。",
+            "next": "237_clue_mask"
+        },
+        {
+            "id": "237_clue_mask",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "mask_wear",
+            "text": "你翻看面具背面——眼睛的孔洞边缘有轻微磨损。你凑近其中一个面具的眼孔，借着月光看到孔洞深处有极细的黑色纤维残留。获得【线索：面具磨损】",
+            "next": "238_common"
+        },
+        {
+            "id": "236_clue_door",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你径直走向房间对面的格状木板。缝隙确实只有5-6厘米宽，你的手臂无法穿过。但你在木板的下沿发现了细小的划痕。",
+            "next": "237_clue_door"
+        },
+        {
+            "id": "237_clue_door",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "board_scratches",
+            "text": "你蹲下看地面——木板下方的地板上有几条平行的浅痕，像是重物被拖拽过。你抬头看木板的上沿，发现有一些灰尘被蹭掉了。获得【线索：木板划痕】",
+            "next": "238_common"
+        },
+        {
+            "id": "238_common",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "苏芳女士怎么样了！",
+            "next": "239"
+        },
+        {
+            "id": "239",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "已经没救了……",
+            "next": "240"
+        },
+        {
+            "id": "240",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "小兰",
+            "expression": "震惊",
+            "text": "怎么会这样……",
+            "next": "241"
+        },
+        {
+            "id": "241",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "老师……",
+            "next": "242"
+        },
+        {
+            "id": "242",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你走到床头柜，拿起钥匙，走到门边打开了锁。小兰进来后立刻阻止其他人进入。",
+            "next": "243"
+        },
+        {
+            "id": "243",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "你们都不要进来！请暂时待在这里。",
+            "next": "244"
+        },
+        {
+            "id": "244",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利叔叔走进房间，仔细检查了遗体。他的眉头越皱越紧。",
+            "next": "245"
+        },
+        {
+            "id": "245",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "伤口在脖子上，可以说是一刀毙命，太狠了……",
+            "next": "246"
+        },
+        {
+            "id": "246",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "片桐正纪",
+            "expression": "思考",
+            "text": "难道说？这是他杀啊！",
+            "next": "247"
+        },
+        {
+            "id": "247",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "这怎么可能呢，刚才这道门明明是上锁的啊！",
+            "next": "248"
+        },
+        {
+            "id": "248",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "不，从遗体的情况来看，她绝对不可能是自杀！",
+            "next": "249"
+        },
+        {
+            "id": "249",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "你在房间内继续搜索，目光落在地上的一张纸条上。你捡起来仔细查看。",
+            "next": "250"
+        },
+        {
+            "id": "250",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "你",
+            "expression": "严肃",
+            "text": "我的诅咒就此实现了……",
+            "next": "251"
+        },
+        {
+            "id": "251",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "毛利小五郎",
+            "expression": "事件",
+            "text": "那是什么？",
+            "next": "252"
+        },
+        {
+            "id": "252",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "凶手的犯罪声明。是诅咒假面的使者留的。",
+            "next": "253"
+        },
+        {
+            "id": "253",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "走廊上的众人听到这句话，都露出惊恐的表情。长良遥低头看着手中的塔罗牌——那是死神牌。",
+            "next": "254"
+        },
+        {
+            "id": "254",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "美奈穗",
+            "expression": "恐惧",
+            "text": "这是诅咒，一定是假面的诅咒！",
+            "next": "255"
+        },
+        {
+            "id": "255",
+            "type": "dialog",
+            "background": "../images/backgrounds/三楼走廊_夜.png",
+            "character": "穗奈美",
+            "expression": "恐惧",
+            "text": "老师就是被这些假面的诅咒杀害的！",
+            "next": "256"
+        },
+        {
+            "id": "256",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "两个女佣相拥跪下，声音中充满恐惧。你看着她们，又看向地上的面具，陷入沉思。",
+            "next": "257"
+        },
+        {
+            "id": "257",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "假面的诅咒把苏芳女士杀了？简直是无稽之谈！但是，命案现场是个密室，凶手到底是用什么方法杀害苏芳女士的？",
+            "next": "258"
+        },
+        {
+            "id": "258",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "你的目光再次扫过房间：紧闭的门窗、散落的面具、格状木板、床上的遗体……这些元素在你的脑海中旋转。",
+            "next": "259"
+        },
+        {
+            "id": "259",
+            "type": "branch",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你注意到面具散落的方式很特别。它们从格状木板下方一直延伸到床边，呈一条蜿蜒的曲线。这让你联想到什么？",
+            "options": [
+                {
+                    "text": "像是被什么东西拖拽过留下的轨迹",
+                    "next": "260_clue_drag"
+                },
+                {
+                    "text": "可能是凶手慌乱中随意扔下的",
+                    "next": "260_no_clue"
+                },
+                {
+                    "text": "或许面具掉落的顺序有特殊意义",
+                    "next": "260_clue_order"
+                }
+            ]
+        },
+        {
+            "id": "260_clue_drag",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "你仔细观察面具的排列——它们不是完全散乱的，而是有明显的方向性。这让你想到：如果有什么东西把这些面具连在一起，然后被拖拽进来……",
+            "next": "261_common"
+        },
+        {
+            "id": "260_no_clue",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "你觉得可能是自己想多了，也许凶手只是随手把面具扔得到处都是，为了制造恐怖氛围。",
+            "next": "261_common"
+        },
+        {
+            "id": "260_clue_order",
+            "type": "dialog",
+            "background": "../images/backgrounds/苏芳寝室_夜.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "你注意到靠近床铺的面具嘴边血迹较多，而靠近木板的面具比较干净。这个分布或许暗示了面具进入房间的顺序……",
+            "next": "261_common"
+        },
+        {
+            "id": "261_common",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "这时，楼下传来警笛声。几分钟后，目暮警官带着高木警官等人匆匆上楼。",
+            "next": "262"
+        },
+        {
+            "id": "262",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "毛利老弟，情况怎么样？",
+            "bgm": "事件现场",
+            "next": "263"
+        },
+        {
+            "id": "263",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "目暮警官，苏芳女士被杀了，现场是个密室。",
+            "next": "264"
+        },
+        {
+            "id": "264",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这真不得了……这些就是诅咒的假面？",
+            "next": "265"
+        },
+        {
+            "id": "265",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "对，我们刚才在那声惨叫之后，还听到一阵东西散落的声音，那恐怕就是凶手将面具散落地面的声音吧。",
+            "next": "266"
+        },
+        {
+            "id": "266",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "你们赶到的时候，这扇门是被人从里面反锁住的对吧？",
+            "next": "267"
+        },
+        {
+            "id": "267",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "对。后来我就将门上的气窗打破之后，让柯南先进去查看情况，才确认苏芳女士已经断气了。",
+            "next": "268"
+        },
+        {
+            "id": "268",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "这扇门的确被人从里面上锁了哦，还上了两道呢！",
+            "next": "269"
+        },
+        {
+            "id": "269",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "两道？",
+            "next": "270"
+        },
+        {
+            "id": "270",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "没错，听说苏芳女士睡觉向来都会上两道锁。首先是门自带的旋转按钮的锁，然后是另外一道挂锁。",
+            "next": "271"
+        },
+        {
+            "id": "271",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这被害人睡觉为什么要上两道锁呢？",
+            "next": "272"
+        },
+        {
+            "id": "272",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "根据她的秘书稻叶小姐表示，当初在请灵媒封印假面诅咒的时候，曾吩咐几个规定要苏芳女士严格遵守。其中之一就是在寝室的门上一定要上两道锁。",
+            "next": "273"
+        },
+        {
+            "id": "273",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "灵媒啊……这么说被害人是在自己打开锁之后才让凶手进入寝室的咯？",
+            "next": "274"
+        },
+        {
+            "id": "274",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "我想恐怕不是像您说的那样。据我所知苏芳女士最近常常失眠，所以最近一直都有服用安眠药的习惯。",
+            "next": "275"
+        },
+        {
+            "id": "275",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "难怪遗体才没有呈现出任何挣扎的痕迹啊。",
+            "next": "276"
+        },
+        {
+            "id": "276",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "如果说被害人今天也照例把门上锁，吃了安眠药之后才睡的话，凶手是如何进到里面的呢？",
+            "next": "277"
+        },
+        {
+            "id": "277",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "目暮警官在房间里走动调查，他注意到了对面的那扇格状木板的门。",
+            "next": "278"
+        },
+        {
+            "id": "278",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这道门是？",
+            "next": "279"
+        },
+        {
+            "id": "279",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "据说这个隔壁还有一个寝室，不过他们说这道门从好几年前就已经被封住了。上面还有钉子钉住了，我看没有撬开过的痕迹。",
+            "next": "280"
+        },
+        {
+            "id": "280",
+            "type": "dialog",
+            "background": "../images/backgrounds/格状木板.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "门最上面有格子状的板子，上面有拆卸的痕迹吗？",
+            "next": "281"
+        },
+        {
+            "id": "281",
+            "type": "dialog",
+            "background": "../images/backgrounds/格状木板.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "我已经检查过了，不过上面没有这样的设计。每个板子之间距离五六公分，一个手臂都穿不过去。",
+            "next": "282"
+        },
+        {
+            "id": "282",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "那边的窗户怎么样呢？",
+            "next": "283"
+        },
+        {
+            "id": "283",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "这个窗户也是被封死的而且没有任何异样。",
+            "next": "284"
+        },
+        {
+            "id": "284",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "这么说凶手到底是用什么方法从哪里进入这个房间的呢？",
+            "next": "285"
+        },
+        {
+            "id": "285",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "唯一能够开启的这道门被被害人从里面锁住了，通往隔壁寝室的这道门又早就被钉子封住，上面那些格状的板子，又连一只手臂都穿不过去。房间内的两扇窗户都封死了，没有异常。",
+            "next": "286"
+        },
+        {
+            "id": "286",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "要是说被害人自己起身用钥匙打开的话，她睡前吃了安眠药根本就不可能啊。案发的时候这里根本就是无法进出的密室嘛。",
+            "next": "287"
+        },
+        {
+            "id": "287",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "苏芳女士真的是自己吃下安眠药的吗？",
+            "next": "288"
+        },
+        {
+            "id": "288",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "毛利小五郎",
+            "expression": "我有一计",
+            "text": "哦！我明白了目暮警官！",
+            "bgm": "STOP",
+            "next": "289"
+        },
+        {
+            "id": "289",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "目暮警官",
+            "expression": "惊喜",
+            "text": "什么？真的吗！",
+            "next": "290"
+        },
+        {
+            "id": "290",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "毛利小五郎",
+            "expression": "我有一计",
+            "text": "凶手事先在半夜和苏芳女士见面，先让她喝下掺有安眠药的饮料将她迷昏，接着再把苏芳女士搬到床上将她杀害！",
+            "next": "291"
+        },
+        {
+            "id": "291",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "目暮警官",
+            "expression": "惊喜",
+            "text": "原来如此啊！那你说，他在离开房间之后，又是怎么把门锁上的呢？",
+            "next": "292"
+        },
+        {
+            "id": "292",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "毛利小五郎",
+            "expression": "对手指",
+            "text": "这，这个嘛……我到还没想到。",
+            "next": "293"
+        },
+        {
+            "id": "293",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "拜托……",
+            "next": "294"
+        },
+        {
+            "id": "294",
+            "type": "dialog",
+            "background": "../images/backgrounds/寝室构造-门.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你在一旁听着，心里快速思考。没错，这样只能将密室的谜题解释一半。",
+            "next": "295"
+        },
+        {
+            "id": "295",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "凶手能够进出寝室的方法除了这道门之外就没别的可能，那他到底是怎么把锁从外面锁上的呢。",
+            "next": "296"
+        },
+        {
+            "id": "296",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "如果只是扭转门把的门锁，利用钓线之类的东西就能够将门锁上……",
+            "next": "297"
+        },
+        {
+            "id": "297",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "问题在于那个挂锁，要想将他挂上，必须先关上门，对准门和门框之间的钥匙锁孔之后，再将挂锁的锁条从两个锁孔穿过去才可以。这一连串的动作要从门外进行根本是不可能的事。",
+            "next": "298"
+        },
+        {
+            "id": "298",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这个凶手到底是用什么手法犯案的……",
+            "next": "299"
+        },
+        {
+            "id": "299",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你在一旁陷入沉思。不管凶手用的是什么手法，都要耗费不少的时间。但他为什么不故布疑阵让被害人看起来像是自杀身亡的，甚至还在行凶之前打电话到房间通知我们，简直就是在吸引人关注他的这项罪行啊。",
+            "next": "300"
+        },
+        {
+            "id": "300",
+            "type": "branch",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "鉴识人员正在检查凶器和面具。你想凑近观察哪些细节？",
+            "options": [
+                {
+                    "text": "仔细观察那把刀的刀柄和血迹分布",
+                    "next": "301_clue_knife"
+                },
+                {
+                    "text": "检查面具上的血迹形态和位置",
+                    "next": "301_clue_mask_blood"
+                },
+                {
+                    "text": "询问鉴识人员关于面具的其他发现",
+                    "next": "301_clue_mask_other"
+                }
+            ]
+        },
+        {
+            "id": "301_clue_knife",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀柄.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你凑近看鉴识人员手中的刀。刀柄上沾满了血，但分布很均匀——如果是握刀刺入，手掌应该会挡住一部分，不会这样均匀沾血。你注意到刀柄尾端有一个很小的磨损痕迹。",
+            "next": "302"
+        },
+        {
+            "id": "301_clue_mask_blood",
+            "type": "dialog",
+            "background": "../images/backgrounds/散落的面具.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你观察鉴识人员正在检查的面具。靠近床铺的面具嘴边有喷溅状血迹，而远处的面具只有零星血点。血迹的分布显示面具在血液喷溅时就在现场，而且位置有高有低。",
+            "next": "302"
+        },
+        {
+            "id": "301_clue_mask_other",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "叔叔，这些面具除了血迹还有什么奇怪的地方吗？",
+            "next": "301_ask"
+        },
+        {
+            "id": "301_ask",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "小朋友很细心啊。我们确实发现有些面具的眼睛孔洞里有微小的纤维残留，可能是穿线留下的。",
+            "next": "302"
+        },
+        {
+            "id": "302",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "目暮警官，凶器应该就是这把刀了。",
+            "next": "303"
+        },
+        {
+            "id": "303",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这把刀原来是摆在假面厅里的装饰品。",
+            "next": "304"
+        },
+        {
+            "id": "304",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀柄.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "这把刀刚刚被放在床头柜上，不过奇怪的是你们可以看到，刀柄上沾了不少的血。",
+            "next": "305"
+        },
+        {
+            "id": "305",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀柄.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这的确不太寻常啊，如果手握住了刀柄，应该不会沾到血才对啊。",
+            "next": "306"
+        },
+        {
+            "id": "306",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "除此之外呢，散落在寝室里的面具上，也有好几副面具似乎溅到了死者的血迹。",
+            "next": "307"
+        },
+        {
+            "id": "307",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "旁白",
+            "expression": "正常",
+            "text": "工作人员接过另外一位递来的面具证据袋，举起来给大家看。",
+            "next": "308"
+        },
+        {
+            "id": "308",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "这是掉落在床铺上的面具，根据沾血的情况显示，它距离死者很近。",
+            "next": "309"
+        },
+        {
+            "id": "309",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "会不会凶手在行凶的时候就戴着这副面具呢？",
+            "next": "310"
+        },
+        {
+            "id": "310",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这么说来的话，凶手会在命案现场留下一些线索也不一定啊。除此之外有没有别的面具也沾到了死者的血液？",
+            "next": "311"
+        },
+        {
+            "id": "311",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "工作人员",
+            "expression": "正常",
+            "text": "有，只不过这点就更奇怪了。其他的面具都只有嘴边沾了一点点血液。",
+            "next": "312"
+        },
+        {
+            "id": "312",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "事实上，这些萧布尔的面具的确有个会吸食持有人献血的恐怖传说。",
+            "next": "313"
+        },
+        {
+            "id": "313",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这也太扯了吧。",
+            "next": "314"
+        },
+        {
+            "id": "314",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "凶手之所以将这些面具散落在现场，会不会就是想用这种离奇的传说来混淆警方的调查呢。",
+            "next": "315"
+        },
+        {
+            "id": "315",
+            "type": "dialog",
+            "background": "../images/backgrounds/检查面具.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "嗯，我想差不多是这个意思吧。",
+            "next": "316"
+        },
+        {
+            "id": "316",
+            "type": "dialog",
+            "background": "../images/backgrounds/散落的面具.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你双手插兜，在一旁沉思。凶手将面具散落一地，真的只是为了这个原因吗……不对，凶手一定还有其他什么目的，只要知道他的目的……",
+            "next": "317"
+        },
+        {
+            "id": "317",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "小林警官",
+            "expression": "紧张",
+            "text": "警官！",
+            "next": "318"
+        },
+        {
+            "id": "318",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "哦，小林老弟。",
+            "next": "319"
+        },
+        {
+            "id": "319",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "小林警官",
+            "expression": "紧张",
+            "text": "我们已经将房子周围全部都搜查过了，不过附近的雪地上，我们并没有查出任何凶手出入过的痕迹。",
+            "next": "320"
+        },
+        {
+            "id": "320",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这么说来，这个凶手……",
+            "next": "321"
+        },
+        {
+            "id": "321",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "就是这屋子里的人了。",
+            "next": "322"
+        },
+        {
+            "id": "322",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "小林警官",
+            "expression": "紧张",
+            "text": "除去毛利先生三人的话，现在在屋子里的有……摄影家片桐正纪先生，职业棒球选手松平守先生，人气鼎盛的占卜师长良遥小姐，摇滚歌手蓝川冬矢先生，被害人的秘书稻叶和代小姐，还有女佣下笠美奈穗和穗奈美小姐。全部一共是7个人。",
+            "next": "323"
+        },
+        {
+            "id": "323",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "我们还可以将嫌疑人的范围缩小啊。",
+            "next": "324"
+        },
+        {
+            "id": "324",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "询问",
+            "text": "此话怎讲？",
+            "next": "325"
+        },
+        {
+            "id": "325",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "因为苏芳女士的寝室在三楼，一定要透过西厢房的楼梯才能走上去，而案发当时假面厅位于东西两边的门早已全部上锁，这点是我们大家都知道的，也就是说案发当时这栋房子的东西厢房是无法互相通行的。",
+            "next": "326"
+        },
+        {
+            "id": "326",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这么说来凶手就是今天住在西厢房的人咯？你们的房间是怎么安排的？",
+            "next": "327"
+        },
+        {
+            "id": "327",
+            "type": "dialog",
+            "background": "../images/backgrounds/一楼房间安排.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "住在一楼东厢房的有蓝川先生，穗奈美小姐；西厢房的有稻叶小姐，美奈穗小姐。",
+            "next": "327.5"
+        },
+        {
+            "id": "327.5",
+            "type": "dialog",
+            "background": "../images/backgrounds/二楼房间安排.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "住在二楼东厢房的呢是我们三个人；西厢房是片桐先生，松平先生，还有长良小姐。",
+            "next": "328"
+        },
+        {
+            "id": "328",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "原来如此啊，这么说嫌犯就有五个人了。片桐先生，松平先生，长良小姐，稻叶小姐和美奈穗小姐。",
+            "next": "329"
+        },
+        {
+            "id": "329",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你在一旁严肃地思考。对，诅咒假面的使者就在他们当中。但究竟是谁？手法又是什么？",
+            "next": "330"
+        },
+        {
+            "id": "330",
+            "type": "branch",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "你决定在离开房间前再确认一件事。现场还有什么细节让你在意？",
+            "options": [
+                {
+                    "text": "再次检查格状木板缝隙的宽度和高度",
+                    "next": "331_clue_gap"
+                },
+                {
+                    "text": "测量从木板到床铺的精确距离",
+                    "next": "331_clue_distance"
+                },
+                {
+                    "text": "查看面具的厚度是否一致",
+                    "next": "331_clue_thickness"
+                }
+            ]
+        },
+        {
+            "id": "331_clue_gap",
+            "type": "dialog",
+            "background": "../images/backgrounds/格状木板.png",
+            "character": "旁白",
+            "expression": "正常",
+            "clueId": "entry_exit_direction",
+            "text": "你走到格状木板前，用手比划测量。缝隙宽度确实约5-6厘米，高度约1米。你注意到木板下沿的划痕比上沿多——说明有物体从下方频繁进出。获得【线索：进出方向】",
+            "next": "332"
+        },
+        {
+            "id": "331_clue_distance",
+            "type": "dialog",
+            "background": "../images/backgrounds/格状木板.png",
+            "character": "旁白",
+            "expression": "正常",
+            "clueId": "precise_distance",
+            "text": "你目测从格状木板到床铺的距离，大约3.5米。获得【线索：精准距离】",
+            "next": "332"
+        },
+        {
+            "id": "331_clue_thickness",
+            "type": "dialog",
+            "background": "../images/backgrounds/格状木板.png",
+            "character": "旁白",
+            "expression": "正常",
+            "clueId": "standard_thickness",
+            "text": "你捡起几个面具叠在一起测量。每个面具厚度确实约1.5厘米，非常均匀。这种标准化厚度让你想到：如果串联起来，可以精确计算总长度。获得【线索：标准厚度】",
+            "next": "332"
+        },
+        {
+            "id": "332",
+            "type": "dialog",
+            "background": "../images/backgrounds/警察到来.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "好了，现场勘查先到这里。请大家到餐厅集合，我们需要逐一询问各位的不在场证明。",
+            "next": "333"
+        },
+        {
+            "id": "333",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "众人聚集在餐厅，围坐在长桌旁。气氛凝重，每个人脸上都带着不同的表情。",
+            "next": "334"
+        },
+        {
+            "id": "334",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "实在不好意思，各位这么忙还要麻烦大家，不过我有几件事情想请教各位。命案发生的时候是在凌晨两点半左右，我想就各位当时的行动进行逐一的清查与了解。首先是穗奈美小姐。",
+            "next": "335"
+        },
+        {
+            "id": "335",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "穗奈美",
+            "expression": "汗",
+            "text": "我在睡觉……在小兰来叫我之前，我都一直待在自己房间里睡觉。",
+            "next": "336"
+        },
+        {
+            "id": "336",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "后来呢？你才拿着钥匙到二楼去是吧。请问你都把钥匙放在哪里啊。",
+            "next": "337"
+        },
+        {
+            "id": "337",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "穗奈美",
+            "expression": "汗",
+            "text": "就在这个餐厅隔壁厨房的墙上。",
+            "next": "338"
+        },
+        {
+            "id": "338",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "这么说，谁都可以随意拿到那把钥匙咯。",
+            "next": "339"
+        },
+        {
+            "id": "339",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "穗奈美",
+            "expression": "汗",
+            "text": "可是我去的时候钥匙还好好地挂在墙上。",
+            "next": "340"
+        },
+        {
+            "id": "340",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "小兰……",
+            "next": "341"
+        },
+        {
+            "id": "341",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "对，她说的都是真的。",
+            "next": "342"
+        },
+        {
+            "id": "342",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "备份钥匙呢？",
+            "next": "343"
+        },
+        {
+            "id": "343",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "美奈穗",
+            "expression": "汗",
+            "text": "那把钥匙很旧，已经没有办法复制备份钥匙了。",
+            "next": "344"
+        },
+        {
+            "id": "344",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "我们在假面厅的门打开后就立刻发现萧布尔的假面全部都不见了。",
+            "next": "345"
+        },
+        {
+            "id": "345",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "就是那个时候吧。我们听到三楼传来一声惨叫，还有很大的声音。",
+            "next": "346"
+        },
+        {
+            "id": "346",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "对。然后就在我们用内线电话叫醒美奈穗的时候，蓝川先生也赶到假面厅了。",
+            "next": "347"
+        },
+        {
+            "id": "347",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "我也是啊，我原本在一楼睡的好好的，后来虽然也听到他们叫穗奈美起来的声音，不过我想八成不会是什么大事。没想到，后来你们越吵越大声，我不放心才走上二楼看看状况。",
+            "next": "348"
+        },
+        {
+            "id": "348",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "蓝川冬矢的证词听起来很自然，你暂时没有发现什么问题。",
+            "next": "349"
+        },
+        {
+            "id": "349",
+            "type": "branch",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "你决定仔细记下每个人的证词，以备后续分析：",
+            "options": [
+                {
+                    "text": "重点记录时间线和行动顺序",
+                    "next": "350_clue_timeline"
+                },
+                {
+                    "text": "注意观察每个人的表情和肢体语言",
+                    "next": "350_clue_behavior"
+                },
+                {
+                    "text": "同时关注证词内容和行为细节",
+                    "next": "350_clue_both"
+                }
+            ]
+        },
+        {
+            "id": "350_clue_timeline",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "complete_timeline",
+            "text": "你专注地梳理时间线：2:30电话响起 → 叔叔冲出房间 → 假面厅门锁着 → 叔叔喊你和姐姐去叫穗奈美……你认真地记下了每个细节。获得【线索：完整时间线】",
+            "next": "351"
+        },
+        {
+            "id": "350_clue_behavior",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "body_language",
+            "text": "你仔细观察每个人的反应：蓝川说话时手指轻敲桌面；片桐眼神闪烁；稻叶显得很紧张……这些细微的表情都被你记在心里。获得【线索：肢体语言】",
+            "next": "351"
+        },
+        {
+            "id": "350_clue_both",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "comprehensive_observation",
+            "text": "你一边记录证词内容，一边观察每个人的肢体语言。蓝川冬矢在说“听到他们叫穗奈美”时有一个短暂的停顿，但你暂时不明白这意味着什么。获得【线索：综合观察】",
+            "next": "351"
+        },
+        {
+            "id": "351",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "美奈穗",
+            "expression": "汗",
+            "text": "我也是啊，我被穗奈美用内线吵醒之后，才拿着钥匙走上二楼的。",
+            "next": "352"
+        },
+        {
+            "id": "352",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "当时我已经在房间里睡着了。后来听到外面闹哄哄的声音，才被吵醒的。到走廊看状况的时候，就正好看到美奈穗爬楼梯要上二楼。",
+            "next": "353"
+        },
+        {
+            "id": "353",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "王松平守",
+            "expression": "正常",
+            "text": "我也差不多啊。",
+            "next": "354"
+        },
+        {
+            "id": "354",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "我也一样。",
+            "next": "355"
+        },
+        {
+            "id": "355",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "稻叶小姐，发现尸体的时候你好像并没有出现对不对啊。",
+            "next": "356"
+        },
+        {
+            "id": "356",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "正常",
+            "text": "我，我只是因为昨天晚上酒喝的多了一点，所以一上床就呼呼大睡了。",
+            "next": "357"
+        },
+        {
+            "id": "357",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "所以你才没有听到外面闹成一团的声音咯。",
+            "next": "358"
+        },
+        {
+            "id": "358",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "正常",
+            "text": "嗯，对。",
+            "next": "359"
+        },
+        {
+            "id": "359",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "对了，片桐先生，你以前和苏芳女士见过面吗？",
+            "next": "360"
+        },
+        {
+            "id": "360",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "没有啊，昨天是我们第一次见面。你怎么这么问呢？",
+            "next": "361"
+        },
+        {
+            "id": "361",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这是因为苏芳女士曾经拜托我调查20年前那场让你夫人丧命的交通事故。",
+            "next": "362"
+        },
+        {
+            "id": "362",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "调查？怎么会呢。",
+            "next": "363"
+        },
+        {
+            "id": "363",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "你可知道为什么吗？",
+            "next": "364"
+        },
+        {
+            "id": "364",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "不，我不知道。",
+            "next": "365"
+        },
+        {
+            "id": "365",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你听到“20年前”这个时间点，突然想起了晚餐时蓝川冬矢说过的话。",
+            "next": "366"
+        },
+        {
+            "id": "366",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "啊，没错。",
+            "next": "367"
+        },
+        {
+            "id": "367",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "蓝川冬矢的声音有些发紧，他的目光在片桐正纪脸上停留了片刻。",
+            "next": "368"
+        },
+        {
+            "id": "368",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "难道说……片桐先生……",
+            "next": "369"
+        },
+        {
+            "id": "369",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这么说令您夫人丧命的那场车祸……",
+            "next": "370"
+        },
+        {
+            "id": "370",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "就算我不说，你们也迟早会知道的。没错，我的太太就是蓝川先生的母亲当年那场车祸的受害者。",
+            "next": "371"
+        },
+        {
+            "id": "371",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "什、什么！",
+            "next": "372"
+        },
+        {
+            "id": "372",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "你只看见蓝川先生震惊的说不出话。。",
+            "next": "373"
+        },
+        {
+            "id": "373",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "蓝川先生，你以前不知道这件事吗？",
+            "next": "374"
+        },
+        {
+            "id": "374",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "蓝川冬矢",
+            "expression": "正常",
+            "text": "嗯，因为那个时候我也不过才6岁而已……",
+            "next": "375"
+        },
+        {
+            "id": "375",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "思考",
+            "text": "可是，那件往事跟现在的案件到底有什么关系呢。",
+            "next": "376"
+        },
+        {
+            "id": "376",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "长良遥",
+            "expression": "正常",
+            "text": "依我看，警方是怀疑凶手就在我们之中，我说的没错吧。",
+            "next": "377"
+        },
+        {
+            "id": "377",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "思考",
+            "text": "啊？",
+            "next": "378"
+        },
+        {
+            "id": "378",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "什么，这是真的吗？目暮警官？",
+            "next": "379"
+        },
+        {
+            "id": "379",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "啊不不不，也不能这么说啦。",
+            "next": "380"
+        },
+        {
+            "id": "380",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "如果我没有记错，昨晚的雪在12点左右就停了，屋外的雪地上是不是找不到凶手出入的痕迹？",
+            "next": "381"
+        },
+        {
+            "id": "381",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "王松平守",
+            "expression": "正常",
+            "text": "到底怎么样啊，警官大人？",
+            "next": "382"
+        },
+        {
+            "id": "382",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "那我就实话实说吧。没有错，我们的确没有在屋外的雪地上找到凶手出入的痕迹。",
+            "next": "383"
+        },
+        {
+            "id": "383",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "正常",
+            "text": "什么！",
+            "next": "384"
+        },
+        {
+            "id": "384",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "思考",
+            "text": "这么说凶手就在我们之中啊？",
+            "next": "385"
+        },
+        {
+            "id": "385",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "而且当时假面厅东西门都已经锁上了，就表示凶手只有可能是睡在西厢房的五个人。也就是片桐先生、松平先生、长良小姐、稻叶小姐和美奈穗小姐。",
+            "next": "386"
+        },
+        {
+            "id": "386",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "可惜现在没办法找出谁才是凶手。",
+            "next": "387"
+        },
+        {
+            "id": "387",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "我想方法还是有的……",
+            "next": "388"
+        },
+        {
+            "id": "388",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "正常",
+            "text": "你该不会说你可以用占卜找出那个凶手是谁吧……",
+            "next": "389"
+        },
+        {
+            "id": "389",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "从现场的情况来看，凶手应该会沾有死者的不少血才对，就算他在行凶时用了面具遮掩，但沾在头发跟身体上的血应该不会这么容易擦掉。",
+            "next": "390"
+        },
+        {
+            "id": "390",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "对啊，所以凶手就是有时间擦掉那些血的人了嘛！",
+            "next": "391"
+        },
+        {
+            "id": "391",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "只见片桐先生哦的一声看向稻叶",
+            "next": "392"
+        },
+        {
+            "id": "392",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "怎么，难道你说我是凶手不成啊？",
+            "next": "393"
+        },
+        {
+            "id": "393",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "有时间将血迹擦掉的应该就只有遗体发现当时没有现身的你咯。",
+            "next": "394"
+        },
+        {
+            "id": "394",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "等会，别开玩笑了好吗？我干嘛非杀老师不可啊？！",
+            "next": "395"
+        },
+        {
+            "id": "395",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "稻叶和代突然激动地站起来，冲向长良遥。",
+            "next": "396"
+        },
+        {
+            "id": "396",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "都是你，你不要乱说话好不好！",
+            "next": "397"
+        },
+        {
+            "id": "397",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "请你冷静一点！",
+            "next": "398"
+        },
+        {
+            "id": "398",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "你这个算命的胡说八道！",
+            "next": "399"
+        },
+        {
+            "id": "399",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "稻叶和代在挣扎中抓住了长良遥的项链，用力一扯——",
+            "next": "400"
+        },
+        {
+            "id": "400",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "项链应声而断，珠子“哗啦啦”地散落一地，滚得到处都是。",
+            "next": "401"
+        },
+        {
+            "id": "401",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你看着满地的珠子，听着它们滚落的声音，突然感到一阵熟悉。",
+            "next": "402"
+        },
+        {
+            "id": "402",
+            "type": "branch",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "这个声音让你想起了什么……",
+            "options": [
+                {
+                    "text": "专注思考这个声音的熟悉感",
+                    "next": "403_think_sound"
+                },
+                {
+                    "text": "观察珠子散落的轨迹和方式",
+                    "next": "403_observe_pattern"
+                },
+                {
+                    "text": "先帮忙捡珠子，顺便整理思绪",
+                    "next": "403_help_pickup"
+                }
+            ]
+        },
+        {
+            "id": "403_think_sound",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "哗啦啦的声音……连贯而密集。这让你想起案发时听到的面具散落声，也是这样的哗啦啦声，而不是单个面具掉落的声音。获得【线索：散落声音】",
+            "next": "404"
+        },
+        {
+            "id": "403_observe_pattern",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你注意到珠子不是一个个掉落的，而是瞬间全部散开。这让你联想到面具散落的方式——也是瞬间全部散落，而不是分批掉落。获得【线索：散落模式】",
+            "next": "404"
+        },
+        {
+            "id": "403_help_pickup",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "clueId": "string_inspiration",
+            "text": "你蹲下身帮忙捡珠子，手指碰到那些圆润的小球。你看到珠子原本是被细线串联在一起的，现在线断了，珠子才散开。获得【线索：串联启示】",
+            "next": "404"
+        },
+        {
+            "id": "404",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "就在你碰到珠子的瞬间，脑海中的碎片突然拼凑起来了。",
+            "next": "405"
+        },
+        {
+            "id": "405",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "面具散落的哗啦声……面具从格状木板到床铺的轨迹……面具眼孔中的纤维残留……刀柄上的血迹……",
+            "next": "406"
+        },
+        {
+            "id": "406",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "所有这些线索在你脑中旋转，然后突然定格在一个画面上——面具像珠子一样被串联起来，从隔壁房间穿过格状木板，延伸到床边。",
+            "next": "407"
+        },
+        {
+            "id": "407",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你猛地抬起头，眼中闪过一丝光芒。",
+            "next": "408"
+        },
+        {
+            "id": "408",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "我懂了，原来是这样……",
+            "next": "409"
+        },
+        {
+            "id": "409",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你低声自语，声音很轻，但语气中充满了确信。",
+            "next": "410"
+        },
+        {
+            "id": "410",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "没有想到，我竟然也掉进凶手的陷阱里。不过，这个障眼法已经失效了。",
+            "next": "411"
+        },
+        {
+            "id": "411",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "思考",
+            "text": "我已经解开假面的诅咒了！",
+            "next": "412"
+        },
+        {
+            "id": "412",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "所有人都惊讶地看向你。你意识到自己太激动了，赶紧调整语气。",
+            "next": "413"
+        },
+        {
+            "id": "413",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "我是说……毛利叔叔好像想到了什么，他让我去拿个东西。",
+            "next": "414"
+        },
+        {
+            "id": "414",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你快步走出餐厅，大脑已经开始飞速运转。你需要验证你的推理，还需要找到关键的证据。",
+            "next": "415"
+        },
+        {
+            "id": "415",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "首先，你需要验证面具串联的手法是否可行。其次，你要找到松紧带的证据。最重要的是，你要让凶手自己暴露。",
+            "next": "416"
+        },
+        {
+            "id": "416",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你快步走出餐厅，迎面看到高木警官正抱着一个装面具的箱子从假面厅出来。",
+            "next": "417"
+        },
+        {
+            "id": "417",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "嗯？柯南，你有事吗？",
+            "next": "418"
+        },
+        {
+            "id": "418",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "高木警官，毛利叔叔说需要你帮忙做个实验验证一下推理。",
+            "next": "419"
+        },
+        {
+            "id": "419",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "真的吗？毛利先生已经破解密室之谜了？",
+            "next": "420"
+        },
+        {
+            "id": "420",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "嗯！叔叔说需要松紧带、小刀、一些面具，还有一根木棍。他要现场演示凶手的手法。",
+            "next": "421"
+        },
+        {
+            "id": "421",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "明白了！我马上去准备！",
+            "next": "422"
+        },
+        {
+            "id": "422",
+            "type": "dialog",
+            "background": "../images/backgrounds/走廊.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "高木警官匆匆离开。你回到餐厅，走到毛利叔叔身边。",
+            "next": "423"
+        },
+        {
+            "id": "423",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "叔叔，我找到了一些重要的线索，在隔壁房间。",
+            "next": "424"
+        },
+        {
+            "id": "424",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "什么线索？在哪里？",
+            "next": "425"
+        },
+        {
+            "id": "425",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "就在那边那个柜子上，你去看看嘛。",
+            "next": "426"
+        },
+        {
+            "id": "426",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "真拿你没办法。",
+            "next": "427"
+        },
+        {
+            "id": "427",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你带着毛利叔叔来到苏芳女士寝室隔壁的房间。",
+            "next": "428"
+        },
+        {
+            "id": "428",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "这里到底有什么嘛。",
+            "next": "429"
+        },
+        {
+            "id": "429",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "就在那边那个柜子上，你去看看嘛。",
+            "next": "430"
+        },
+        {
+            "id": "430",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "室内",
+            "text": "嗯，根本没什么东西嘛。",
+            "next": "431"
+        },
+        {
+            "id": "431",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "就在毛利叔叔转身的瞬间，你抬起了手腕。",
+            "next": "432"
+        },
+        {
+            "id": "432",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "麻醉针精准地射中了毛利叔叔的后颈。",
+            "next": "433"
+        },
+        {
+            "id": "433",
+            "type": "dialog",
+            "background": "../images/backgrounds/麻醉png",
+            "character": "毛利小五郎",
+            "expression": "",
+            "text": "呃啊……",
+            "next": "434"
+        },
+        {
+            "id": "434",
+            "type": "dialog",
+            "background": "../images/backgrounds/麻醉.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "毛利叔叔发出一阵呼噜噜的声音，随后缓缓坐倒在房间的椅子上，低下了头。",
+            "next": "435"
+        },
+        {
+            "id": "435",
+            "type": "dialog",
+            "background": "../images/backgrounds/麻醉.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你调整好蝴蝶结变声器，深吸一口气。",
+            "next": "436"
+        },
+        {
+            "id": "436",
+            "type": "dialog",
+            "background": "../images/backgrounds/麻醉.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "接下来看你的咯，叔叔。",
+            "next": "437"
+        },
+        {
+            "id": "437",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你快步回到餐厅，对目暮警官说道。",
+            "next": "438"
+        },
+        {
+            "id": "438",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "目暮警官，毛利叔叔说他已经准备好了，请大家到隔壁房间去。",
+            "next": "439"
+        },
+        {
+            "id": "439",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "真的吗？太好了！",
+            "next": "440"
+        },
+        {
+            "id": "440",
+            "type": "dialog",
+            "background": "../images/backgrounds/不在场证明.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "目暮警官带着众人跟随你来到苏芳女士寝室隔壁的房间。",
+            "next": "441"
+        },
+        {
+            "id": "441",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "松平守",
+            "expression": "正常",
+            "text": "这就是苏芳女士隔壁的寝室啊。",
+            "next": "442"
+        },
+        {
+            "id": "442",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "正常",
+            "text": "没想到隔壁的寝室室内装潢竟然跟他那里一模一样啊。",
+            "next": "443"
+        },
+        {
+            "id": "443",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "对，在这间装潢得一模一样的房间里，解开密室杀人之谜，揭穿凶手的身份，应该再合适不过了。",
+            "next": "444"
+        },
+        {
+            "id": "444",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "王松平守",
+            "expression": "紧张",
+            "text": "诶？难道凶手不是稻叶小姐吗？",
+            "next": "445"
+        },
+        {
+            "id": "445",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "我跟你说过不是了！",
+            "next": "446"
+        },
+        {
+            "id": "446",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "紧张",
+            "text": "你已经将密室之谜解开了吗？",
+            "next": "447"
+        },
+        {
+            "id": "447",
+            "type": "dialog",
+            "background": "../images/backgrounds/麻醉.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "没错，我全都搞清楚了。",
+            "next": "448"
+        },
+        {
+            "id": "448",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "那么凶手到底是谁呢？",
+            "next": "449"
+        },
+        {
+            "id": "449",
+            "type": "branch",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "现在你需要指认凶手。根据你收集的线索，你认为诅咒假面的使者是谁？",
+            "options": [
+                {
+                    "text": "蓝川冬矢 - 他的证词有矛盾，且有复仇动机",
+                    "next": "450_lan"
+                },
+                {
+                    "text": "片桐正纪 - 他是车祸受害者家属",
+                    "next": "450_katagiri"
+                },
+                {
+                    "text": "稻叶和代 - 她没有不在场证明",
+                    "next": "450_inaba"
+                }
+            ]
+        },
+        {
+            "id": "450_lan",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "这个将苏芳女士在密室中杀害的凶手，诅咒假面的使者——就是你，蓝川冬矢先生！",
+            "bgm": "事件明朗",
+            "next": "451_perfect_start"
+        },
+        {
+            "id": "450_katagiri",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "这个将苏芳女士在密室中杀害的凶手，诅咒假面的使者——就是你，片桐正纪先生！",
+            "next": "451_wrong_katagiri"
+        },
+        {
+            "id": "450_inaba",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "这个将苏芳女士在密室中杀害的凶手，诅咒假面的使者——就是你，稻叶和代小姐！",
+            "next": "451_wrong_inaba"
+        },
+        {
+            "id": "451_perfect_start",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "房间里一片寂静，所有人都震惊地看向蓝川冬矢。你指对了，现在可以直接进入完美的推理演示。",
+            "next": "452_perfect_path"
+        },
+        {
+            "id": "451_wrong_katagiri",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "汗",
+            "text": "荒谬！我为什么要杀苏芳女士？而且我根本不熟悉这种机关手法！",
+            "next": "452_wrong_reaction"
+        },
+        {
+            "id": "451_wrong_inaba",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "别开玩笑了！我怎么可能杀害老师！",
+            "next": "452_wrong_reaction"
+        },
+        {
+            "id": "452_perfect_path",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "汗",
+            "text": "你在说什么呢？毛利先生，案发当时我正睡在西厢房。怎么可能到得了老师的寝室呢？",
+            "next": "453_perfect_response"
+        },
+        {
+            "id": "452_wrong_reaction",
+            "type": "branch",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "你意识到自己指认错了。被指认的人反应很真实。现在你需要：",
+            "options": [
+                {
+                    "text": "仔细观察蓝川的表情",
+                    "next": "453_observe_lan"
+                },
+                {
+                    "text": "先解释凶手的手法",
+                    "next": "453_explain_first"
+                },
+                {
+                    "text": "承认错误，重新思考",
+                    "next": "453_restart"
+                }
+            ]
+        },
+        {
+            "id": "453_perfect_response",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "对，你的确是无法进入苏芳女士的寝室。但凶手根本不需要进入寝室就能杀人！高木警官，请开始演示。",
+            "next": "454_demonstration_start"
+        },
+        {
+            "id": "453_observe_lan",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你注意到蓝川在听到错误指认时，表情有一丝放松。当他以为安全时，这种反应很可疑。",
+            "next": "453_correct_after_observe"
+        },
+        {
+            "id": "453_correct_after_observe",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "等等……我重新思考一下。刚才我指认错了。真正的凶手应该是你，蓝川冬矢先生！",
+            "next": "454_demonstration_start"
+        },
+        {
+            "id": "453_explain_first",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "抱歉各位，让我们先来解释一下凶手是如何在不进入密室的情况下杀人的。",
+            "next": "453_explain_process"
+        },
+        {
+            "id": "453_restart",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "抱歉，我需要重新思考。高木警官，请先演示凶手的手法，这样我们就能知道谁是真正的罪犯了。",
+            "next": "454_demonstration_start"
+        },
+        {
+            "id": "453_explain_process",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "凶手利用了那些面具。他用松紧带把两百个面具串联起来，从隔壁房间通过格状木板的缝隙塞进苏芳女士的房间……",
+            "next": "453_explain_end"
+        },
+        {
+            "id": "453_explain_end",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "所以，能够实施这个手法的只有熟悉舞台机关、住在西厢房、且有动机的人——蓝川冬矢先生！高木警官，请演示。",
+            "next": "454_demonstration_start"
+        },
+        {
+            "id": "454_demonstration_start",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "在！",
+            "next": "455_demonstration_1"
+        },
+        {
+            "id": "455_demonstration_1",
+            "type": "dialog",
+            "background": "../images/backgrounds/串小刀.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "高木警官在门外往格状木板缝隙中丢入一把绑着松紧带的小刀，然后开始串联面具。",
+            "next": "456_demonstration_2"
+        },
+        {
+            "id": "456_demonstration_2",
+            "type": "dialog",
+            "background": "../images/backgrounds/串小刀.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "我借来了一把类似凶器的小刀，在刀柄尾端的部分，请高木警官穿了条松紧带。接着是面具的部分，将一条松紧带穿过所有面具两眼的空洞，像串珠子一样串起来。",
+            "next": "457_demonstration_3"
+        },
+        {
+            "id": "457_demonstration_3",
+            "type": "dialog",
+            "background": "../images/backgrounds/串小刀.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "蓝川先生，在我们全部都睡着了之后，就拿了厨房里的钥匙进入假面厅，将所有面具和刀偷了出来。将门锁上以后，再把钥匙拿回厨房。",
+            "next": "458_demonstration_4"
+        },
+        {
+            "id": "458_demonstration_4",
+            "type": "dialog",
+            "background": "../images/backgrounds/开始串面具.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "接着，他就把面具和凶器搬到这个房间，用松紧带穿起所有的面具之后，将面具一个一个从格子间放入苏芳女士寝室。",
+            "next": "459_demonstration_5"
+        },
+        {
+            "id": "459_demonstration_5",
+            "type": "dialog",
+            "background": "../images/backgrounds/面具串完.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "所有的面具都放进寝室里之后，就可以用松紧带来控制面具。请大家想想看，一副面具以厚度1.5公分计算。",
+            "next": "460_demonstration_6"
+        },
+        {
+            "id": "460_demonstration_6",
+            "type": "dialog",
+            "background": "../images/backgrounds/开始拉面具.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "将200个面具全部叠起来，至少有三公尺的长度。可是当时被害人睡在床上，脖子的位置距离格状木板大概3.5公尺。",
+            "next": "460_demonstration_6.5"
+        },
+        {
+            "id": "460_demonstration_6.5",
+            "type": "scene",
+            "background": "../images/backgrounds/拉紧面具.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": "461_demonstration_7"
+        },
+        {
+            "id": "461_demonstration_7",
+            "type": "dialog",
+            "background": "../images/backgrounds/面具指向尸体.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "凶刀的尖端距离被害人的喉咙只有短短的10公分，这个时候只要用木棒之类的东西推一下面具……",
+            "next": "462_demonstration_8"
+        },
+        {
+            "id": "462_demonstration_8",
+            "type": "dialog",
+            "background": "../images/backgrounds/推面具.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "高木警官用木棍从这边轻轻推动面具串。紧绷的松紧带像弹弓一样释放能量——",
+            "next": "463_demonstration_9"
+        },
+        {
+            "id": "463_demonstration_9",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "刀猛地向前弹射出去，刺中了模拟用的枕头。",
+            "next": "464_demonstration_10"
+        },
+        {
+            "id": "464_demonstration_10",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "天啊……真的可以……",
+            "next": "465_demonstration_11"
+        },
+        {
+            "id": "465_demonstration_11",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "蓝川先生就能在完全不进寝室的情况下成功的将苏芳女士杀害。这么一来她就能利用只有西厢房的人才能来寝室行凶的说法了。",
+            "next": "466_demonstration_12"
+        },
+        {
+            "id": "466_demonstration_12",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "王松平守",
+            "expression": "汗",
+            "text": "啊，我懂了，所以第1个面具上会沾了那么多的血，就是因为他首当其冲的关系吧？",
+            "next": "467_demonstration_13"
+        },
+        {
+            "id": "467_demonstration_13",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "长良遥",
+            "expression": "室内",
+            "text": "还有几个面具的嘴角沾上血迹，也是因为血液喷洒的关系吧。",
+            "next": "468_demonstration_14"
+        },
+        {
+            "id": "468_demonstration_14",
+            "type": "dialog",
+            "background": "../images/backgrounds/刀逼近.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "最后呢，只需要再将穿过面具和凶器的松紧带剪断就行了。",
+            "next": "469_demonstration_15"
+        },
+        {
+            "id": "469_demonstration_15",
+            "type": "dialog",
+            "background": "../images/backgrounds/散落的假面.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "高木警官剪断松紧带，面具哗啦啦散落一地。",
+            "next": "470_demonstration_16"
+        },
+        {
+            "id": "470_demonstration_16",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "你们看，这样就完成一件密室杀人案了。",
+            "next": "471_confront_start"
+        },
+        {
+            "id": "471_confront_start",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "你少胡说了，你有什么证据指认是我用了这个手法杀人的！",
+            "next": "472_confront_choice"
+        },
+        {
+            "id": "472_confront_choice",
+            "type": "branch",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "现在需要用决定性证据质问蓝川。你选择：",
+            "options": [
+                {
+                    "text": "质问“他们”这个用词的矛盾",
+                    "next": "473_question_they"
+                },
+                {
+                    "text": "结合多个线索进行综合质问",
+                    "next": "473_question_combo",
+                    "requires_clues": [
+                        "红色纤维",
+                        "面具磨损",
+                        "紧张表现"
+                    ]
+                },
+                {
+                    "text": "让高木出示搜到的松紧带证据",
+                    "next": "473_question_evidence",
+                    "requires_clues": [
+                        "松紧带证据",
+                        "纤维残留"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "473_question_they",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "蓝川先生，你就乖乖认罪吧。其实呢，你早就已经亲口承认你就是凶手了。难道你都没有注意到吗？",
+            "next": "474_question_1"
+        },
+        {
+            "id": "473_question_combo",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "蓝川先生，让我们把证据连起来：你背包里的松紧带、死者手上的红色纤维、面具眼孔的磨损、还有你证词中的矛盾……这些还不够吗？",
+            "next": "474_question_1"
+        },
+        {
+            "id": "473_question_evidence",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "高木警官，请出示证据。",
+            "next": "474_evidence_show"
+        },
+        {
+            "id": "474_evidence_show",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "高木警官",
+            "expression": "正常",
+            "text": "是！我们在蓝川先生房间找到了用剩的松紧带，和在现场发现的纤维材质相同。",
+            "next": "474_question_1"
+        },
+        {
+            "id": "474_question_1",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "刚才调查不在场证明的时候，你看着小兰说了一句话，你说你当时听到他们叫穗奈美起来的声音。。",
+            "next": "475_question_2"
+        },
+        {
+            "id": "475_question_2",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "汗",
+            "text": "对啊，因为那个时候我还在自己一楼的房间里面啊。",
+            "next": "476_question_3"
+        },
+        {
+            "id": "476_question_3",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "你说的他们指的是小兰跟谁呀？",
+            "next": "477_question_4"
+        },
+        {
+            "id": "477_question_4",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "汗",
+            "text": "当然是那个叫什么柯南的小孩啊！",
+            "next": "478_trap_1"
+        },
+        {
+            "id": "478_trap_1",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "可是那就很奇怪了，那个时候我明明一句话都没有说。你怎么知道我跟小兰姐姐在一起啊？",
+            "next": "479_trap_2"
+        },
+        {
+            "id": "479_trap_2",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "汗",
+            "text": "因为……对，那个时候我把门打开了一点往外看，所以我才会知道你跟小兰在一起的啊。",
+            "next": "480_final_trap"
+        },
+        {
+            "id": "480_final_trap",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "真的吗？",
+            "next": "481_final_expose"
+        },
+        {
+            "id": "481_final_expose",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "汗",
+            "text": "当然了！",
+            "next": "482_final_reveal"
+        },
+        {
+            "id": "482_final_reveal",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "你",
+            "expression": "推理",
+            "text": "真是这样，那就更怪了，因为那个时候我根本没有和小兰姐姐在一起。那时候我跑去检查门锁的状况了。",
+            "next": "483_final_shock"
+        },
+        {
+            "id": "483_final_shock",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "震惊",
+            "text": "什么？",
+            "next": "484_confirm"
+        },
+        {
+            "id": "484_confirm",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "是真的吗？",
+            "next": "485_witness"
+        },
+        {
+            "id": "485_witness",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "啊，对，当时跑去叫穗奈美的只有我一个人。",
+            "bgm": "推理对决",
+            "next": "486_explanation"
+        },
+        {
+            "id": "486_explanation",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "不过我那个时候的确是叫小兰和柯南去把穗奈美叫醒没错。你是在三楼听到我说的那些话所以就自然而然地有了他们两个人一起到穗奈美房间去的假象，我说的没错吧。",
+            "next": "487_confession"
+        },
+        {
+            "id": "487_confession",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "……原来，你这样就知道是我了。",
+            "next": "488_start_confess"
+        },
+        {
+            "id": "488_start_confess",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "冬矢，老师辛苦的养育你，你怎么可以…！",
+            "bgm": "STOP",
+            "next": "489_anger"
+        },
+        {
+            "id": "489_anger",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "住口！你说那个女人对我有恩，别开玩笑了！那个女人自己撞了人，就把罪推到我妈身上，还杀了她，让大家以为她是自杀的！",
+            "bgm": "凶手认罪",
+            "next": "490_shock"
+        },
+        {
+            "id": "490_shock",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "紧张",
+            "text": "…你这话可是真的？",
+            "next": "491_proof"
+        },
+        {
+            "id": "491_proof",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "当然是真的！其实我也是在两个月前才知道这件事的。在整理我妈的遗物的时候，竟然从日记的封面里飘出一封信来。一切的真相全都写在那封信上。。",
+            "next": "492_denial"
+        },
+        {
+            "id": "492_denial",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "不可能！那一定是你妈胡说八道的！",
+            "next": "493_alibi"
+        },
+        {
+            "id": "493_alibi",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "他没有胡说，我妈他有不在场证明！因为车祸的那天正好是10月31号的晚上。。",
+            "next": "494_birthday"
+        },
+        {
+            "id": "494_birthday",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "美奈穗",
+            "expression": "汗",
+            "text": "10月31号，那不是你的生日吗？",
+            "next": "495_together"
+        },
+        {
+            "id": "495_together",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "没错！那天晚上我妈一直跟我在一起。",
+            "next": "496_realization"
+        },
+        {
+            "id": "496_realization",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "紧张",
+            "text": "这么说，当年撞了我太太就逃逸的是苏芳。。。",
+            "next": "497_irony"
+        },
+        {
+            "id": "497_irony",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "而且那个女人甚至都没有注意到片桐先生就是被害人的丈夫。",
+            "next": "498_investigation"
+        },
+        {
+            "id": "498_investigation",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "他在晚餐的时候听到片桐先生的那番话，起了疑心，才会委托我帮他调查这件事吧。",
+            "next": "499_charity"
+        },
+        {
+            "id": "499_charity",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "老师她15年来一直救济车祸孤儿，你们不要侮辱她啊！",
+            "next": "500_truth"
+        },
+        {
+            "id": "500_truth",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "不要笑死人了，那个女人根本是想把慈善事业所有收入全部中饱私囊。",
+            "next": "501_deny_again"
+        },
+        {
+            "id": "501_deny_again",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "你不要乱说，老师没做这种事！",
+            "next": "502_accuse"
+        },
+        {
+            "id": "502_accuse",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "你还狡辩，你也分一杯羹不是吗！你可别装的什么都不知道！",
+            "next": "503_silence"
+        },
+        {
+            "id": "503_silence",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "稻叶和代",
+            "expression": "震惊",
+            "text": "……",
+            "next": "504_final_words"
+        },
+        {
+            "id": "504_final_words",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "认罪",
+            "text": "本来我一直试图阻止片桐先生参加苏芳这场肮脏的慈善晚会的。苏芳红子，那个女人根本是个带着慈善家面具的恶魔。一想到我这么多年来竟然把他当成恩人一样看待，我就。。我就恨我自己！",
+            "next": "505_arrest"
+        },
+        {
+            "id": "505_arrest",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "蓝川冬矢，你因涉嫌谋杀苏芳红子，现在正式逮捕你。",
+            "next": "506_handcuffs"
+        },
+        {
+            "id": "506_handcuffs",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "手铐清脆地锁上蓝川冬矢的手腕。",
+            "next": "507_final_request"
+        },
+        {
+            "id": "507_final_request",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "被带走",
+            "text": "在被带走前，我只有一个请求。片桐先生……",
+            "next": "508_apology"
+        },
+        {
+            "id": "508_apology",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "蓝川冬矢",
+            "expression": "被带走",
+            "text": "对不起。为20年前的事，也为现在的事。",
+            "next": "509_response"
+        },
+        {
+            "id": "509_response",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "片桐正纪",
+            "expression": "思考",
+            "text": "……该说对不起的人，也许是我。如果我早点察觉到真相……",
+            "next": "510_taken_away"
+        },
+        {
+            "id": "510_taken_away",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "蓝川冬矢被警方带走。房间里陷入了沉默。",
+            "next": "511_thanks"
+        },
+        {
+            "id": "511_thanks",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "目暮警官",
+            "expression": "正常",
+            "text": "毛利老弟，这次又麻烦你了。真是精彩的推理。",
+            "bgm": "STOP",
+            "next": "512_humble"
+        },
+        {
+            "id": "512_humble",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "毛利小五郎",
+            "expression": "麻醉",
+            "text": "哈哈哈，哪里哪里，这是我应该做的！",
+            "next": "513_end_scene"
+        },
+        {
+            "id": "513_end_scene",
+            "type": "dialog",
+            "background": "../images/backgrounds/隔壁房间.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "案件解决了，众人陆续离开房间。",
+            "next": "514_morning"
+        },
+        {
+            "id": "514_morning",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "清晨，你们三人站在宅邸外准备离开。",
+            "bgm": "事件解决",
+            "next": "515_conan_tired"
+        },
+        {
+            "id": "515_conan_tired",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "小兰",
+            "expression": "正常",
+            "text": "柯南，累了吧？",
+            "next": "516_conan_response"
+        },
+        {
+            "id": "516_conan_response",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "嗯，有一点。",
+            "next": "517_maori_confused"
+        },
+        {
+            "id": "517_maori_confused",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "不过这次我推理得不错吧？虽然记忆有点模糊……",
+            "next": "518_conan_praise"
+        },
+        {
+            "id": "518_conan_praise",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "你",
+            "expression": "正常",
+            "text": "叔叔最厉害了！",
+            "next": "519_maori_proud"
+        },
+        {
+            "id": "519_maori_proud",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "毛利小五郎",
+            "expression": "傻笑",
+            "text": "哈哈哈！那是当然！",
+            "next": "520_final_look"
+        },
+        {
+            "id": "520_final_look",
+            "type": "dialog",
+            "background": "../images/backgrounds/宅子门口.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "你回头看了一眼宅邸。诅咒假面的诅咒，已经被真相解除了。",
+            "next": "521_car_ride"
+        },
+        {
+            "id": "521_car_ride",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "车子驶离宅邸，雪地上的车辙很快会被新雪覆盖。",
+            "next": "522_final_thought"
+        },
+        {
+            "id": "522_final_thought",
+            "type": "dialog",
+            "background": "../images/backgrounds/incar.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "但真相永远不会被掩盖。",
+            "next": "523_credits_1"
+        },
+        {
+            "id": "523_credits_1",
+            "type": "dialog",
+            "background": "../images/backgrounds/black.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "《诅咒假面的冷笑》事件结束",
+            "bgm": "STOP",
+            "next": "524_credits_2"
+        },
+        {
+            "id": "524_credits_2",
+            "type": "dialog",
+            "background": "../images/backgrounds/black.png",
+            "character": "旁白",
+            "expression": "",
+            "text": "感谢游玩！",
+            "next": "525_end"
+        },
+        {
+            "id": "525_end",
+            "type": "end",
+            "background": "../images/backgrounds/black.png",
+            "character": "",
+            "expression": "",
+            "text": "",
+            "next": null
+        }
+    ]
+}
